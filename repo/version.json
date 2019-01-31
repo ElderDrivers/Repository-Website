@@ -11,9 +11,9 @@
         "28": "All"
       },
       "incompatibility": {
-        "26": "Huawei, MIUI, Samsung",
-        "27": "Huawei, MIUI, Samsung",
-        "28": "Huawei, MIUI, Samsung"
+        "26": "None",
+        "27": "None",
+        "28": "None"
       },
       "support": {
         "26": "http://github.com/ElderDrivers/EdXposed/",
@@ -23,7 +23,7 @@
       "installers": {
         "26": [
           {
-            "name": "xposed-v0.2.9.8",
+            "name": "EdXposed-v0.2.9.8",
             "version": "0.2.9.8",
             "link": "http://edxp.meowcat.org/",
             "architecture": "all"
@@ -31,7 +31,7 @@
         ],
         "27": [
           {
-            "name": "xposed-v0.2.9.8",
+            "name": "EdXposed-v0.2.9.8",
             "version": "0.2.9.8",
             "link": "http://edxp.meowcat.org/",
             "architecture": "all"
