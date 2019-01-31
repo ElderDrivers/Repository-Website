@@ -11,9 +11,9 @@
         "28": "All"
       },
       "incompatibility": {
-        "26": "No incompatibility",
-        "27": "No incompatibility",
-        "28": "No incompatibility"
+        "26": "Huawei, MIUI, Samsung",
+        "27": "Huawei, MIUI, Samsung",
+        "28": "Huawei, MIUI, Samsung"
       },
       "support": {
         "26": "http://github.com/ElderDrivers/EdXposed/",
@@ -25,7 +25,7 @@
           {
             "name": "xposed-v0.2.9.8",
             "version": "0.2.9.8",
-            "link": "https://forum.xda-developers.com/attachment.php?attachmentid=4364278&d=1513624620",
+            "link": "http://edxp.meowcat.org/",
             "architecture": "all"
           }
         ],
@@ -33,7 +33,7 @@
           {
             "name": "xposed-v0.2.9.8",
             "version": "0.2.9.8",
-            "link": "https://forum.xda-developers.com/attachment.php?attachmentid=4364279&d=1513624634",
+            "link": "http://edxp.meowcat.org/",
             "architecture": "all"
           }
         ],
@@ -41,7 +41,55 @@
           {
             "name": "EdXposed-v0.2.9.8",
             "version": "0.2.9.8",
-            "link": "https://forum.xda-developers.com/attachment.php?attachmentid=4364280&d=1513624647",
+            "link": "http://edxp.meowcat.org/",
+            "architecture": "all"
+          }
+        ]
+      },
+      "uninstallers": []
+    }，
+    {
+      "name": "Riru",
+      "sdks": [26, 27, 28],
+      "author": "Rikka",
+      "stable": true,
+      "compatibility": {
+        "26": "All",
+        "27": "All",
+        "28": "All"
+      },
+      "incompatibility": {
+        "26": "None",
+        "27": "None",
+        "28": "None"
+      },
+      "support": {
+        "26": "https://github.com/RikkaApps/Riru/",
+        "27": "https://github.com/RikkaApps/Riru/",
+        "28": "https://github.com/RikkaApps/Riru/"
+      },
+      "installers": {
+        "26": [
+          {
+            "name": "Riru-Core-v11",
+            "version": "11",
+            "link": "https://github.com/RikkaApps/Riru/releases/download/v11/magisk-riru-core-v11.zip",
+            "architecture": "all"
+          }
+        ],
+        "27": [
+          {
+            "name": "Riru-Core-v11",
+            "version": "11",
+            "link": "https://github.com/RikkaApps/Riru/releases/download/v11/magisk-riru-core-v11.zip",
+            "architecture": "all"
+          }
+        ],
+        "28": [
+          {
+            "name": "Riru-Core-v11",
+            "version": "11",
+            "link": "https://github.com/RikkaApps/Riru/releases/download/v11/magisk-riru-core-v11.zip",
             "architecture": "all"
           }
         ]
@@ -50,7 +98,7 @@
     }
   ],
   "apk": {
-    "version": "411",
+    "version": "410",
     "changelog":"<b>Update Test</b><br>&#149; <b>Test1:</b> 12345<br>&#149; <b>Test2:</b> 45678<br>&#149; <b>Test3:</b> 56789",
     "link": "http://edxp.meowcat.org/"
   }
