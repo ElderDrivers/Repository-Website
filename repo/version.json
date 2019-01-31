@@ -51,7 +51,7 @@
   ],
   "apk": {
     "version": "411",
-    "changelog":"<b>Update Test</b><br>&#149; <b>NEW:</b> Toggle to hide Chinese modules<br>&#149; <b>IMPROVEMENTS:</b> Fix list download error<br>&#149; <b>IMPROVEMENTS:</b> Fixes",
+    "changelog":"<b>Update Test</b><br>&#149; <b>Test1:</b> 12345<br>&#149; <b>Test2:</b> 45678<br>&#149; <b>Test3:</b> 56789",
     "link": "http://edxp.meowcat.org/"
   }
 }
