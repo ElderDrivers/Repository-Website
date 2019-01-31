@@ -343,29 +343,12 @@
           }
         ]
       },
-      "uninstallers": [
-        {
-          "name": "xposed-uninstaller-20160829-arm",
-          "version": "20160829",
-          "link": "http://dl-xda.xposed.info/framework/uninstaller/xposed-uninstaller-20160829-arm.zip",
-          "architecture": "arm"
-        }, {
-          "name": "xposed-uninstaller-20160829-arm64",
-          "version": "20160829",
-          "link": "http://dl-xda.xposed.info/framework/uninstaller/xposed-uninstaller-20160829-arm64.zip",
-          "architecture": "arm64"
-        }, {
-          "name": "xposed-uninstaller-20160829-x86",
-          "version": "20160829",
-          "link": "http://dl-xda.xposed.info/framework/uninstaller/xposed-uninstaller-20160829-x86.zip",
-          "architecture": "x86"
-        }
-      ]
+      "uninstallers": []
     }
   ],
   "apk": {
-    "version": "1539962400000",
-    "changelog":"<b>What's new:</b><br>&#149; <b>NEW:</b> Toggle to hide Chinese modules<br>&#149; <b>IMPROVEMENTS:</b> Fix list download error<br>&#149; <b>IMPROVEMENTS:</b> Fixes",
-    "link": "https://forum.xda-developers.com/devdb/project/dl/?id=30660&task=get"
+    "version": "411",
+    "changelog":"<b>Update Test</b><br>&#149; <b>NEW:</b> Toggle to hide Chinese modules<br>&#149; <b>IMPROVEMENTS:</b> Fix list download error<br>&#149; <b>IMPROVEMENTS:</b> Fixes",
+    "link": "http://edxp.meowcat.org/"
   }
 }
