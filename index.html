@@ -18,10 +18,9 @@
         }  
         return -1;  
     }  
-    var device_type = navigator.userAgent;//获取userAgent信息  
-    //document.write(device_type);//打印到页面  
-    var md = new MobileDetect(device_type);//初始化mobile-detect  
-    var os = md.os();//获取系统  
+    var device_type = navigator.userAgent;
+    var md = new MobileDetect(device_type);
+    var os = md.os();
     var model = "";  
     if (os == "iOS") { 
         os = md.os() + md.version("iPhone");  
@@ -34,14 +33,129 @@
             model = sss[i].substring(0, sss[i].indexOf("Build/"));  
         }  
     }  
-    var pos=os;
+    var pos=os.toString();
     var pmodel=model;
-    //setCookie('phone', os + "-" + model,3); //写入后,后台php可以得到这个参数并入库
+    var psdk=0;
+    var pver="0"; 
+    var pcode="Android";
+    if (pos.indexOf("10") >= 0) {
+            psdk=29;
+            pver="10";
+            pcode="Q";
+    } else if (pos.indexOf("9") >= 0) {
+            psdk=28;
+            pver="9";
+            pcode="Pie";
+    } else if (pos.indexOf("8.1") >= 0) {
+            psdk=27;
+            pver="8.1";
+            pcode="Oreo";
+    } else if (pos.indexOf("8") >= 0) {
+            psdk=26;
+            pver="8";
+            pcode="Oreo";
+    } else if (pos.indexOf("7.1") >= 0) {
+            psdk=25;
+            pver="7.1";
+            pcode="Nougat";
+    } else if (pos.indexOf("7") >= 0) {
+            psdk=24;
+            pver="7";
+            pcode="Nougat";
+    } else if (pos.indexOf("6") >= 0) {
+            psdk=23;
+            pver="6";
+            pcode="Marshmallow";
+    } else if (pos.indexOf("5") >= 0) {
+            psdk=21;
+            pver="5";
+            pcode="Lollipop";
+    } else if (pos.indexOf("4.4W") >= 0) {
+            psdk=20;
+            pver="4.4W";
+            pcode="Kit Kat Watch";
+    } else if (pos.indexOf("4.4") >= 0) {
+            psdk=19;
+            pver="4.4";
+            pcode="Kit Kat";
+    } else if (pos.indexOf("4.3") >= 0) {
+            psdk=18;
+            pver="4.3";
+            pcode="Jelly Bean";
+    } else if (pos.indexOf("4.2") >= 0) {
+            psdk=17;
+            pver="4.2";
+            pcode="Jelly Bean";
+    } else if (pos.indexOf("4.1") >= 0) {
+            psdk=16;
+            pver="4.1";
+            pcode="Jelly Bean";
+    } else if (pos.indexOf("4.0.4") >= 0 || pos.indexOf("4.04") >= 0 || pos.indexOf("4.0.3") >= 0 || pos.indexOf("4.03") >= 0) {
+            psdk=15;
+            pver="4.0";
+            pcode="Ice Cream Sandwich";
+    } else if (pos.indexOf("4.0") >= 0) {
+            psdk=14;
+            pver="4.0";
+            pcode="Ice Cream Sandwich";
+    } else if (pos.indexOf("3.2") >= 0) {
+            psdk=13;
+            pver="3.2";
+            pcode="Honey Comb";
+    } else if (pos.indexOf("3.1") >= 0) {
+            psdk=12;
+            pver="3.1";
+            pcode="Honey Comb";
+    } else if (pos.indexOf("3.0") >= 0) {
+            psdk=11;
+            pver="3.0";
+            pcode="Honey Comb";
+    } else if (pos.indexOf("2.3.4") >= 0 || pos.indexOf("2.34") >= 0 || pos.indexOf("2.3.3") >= 0 || pos.indexOf("2.33") >= 0) {
+            psdk=10;
+            pver="2.3";
+            pcode="Gingerbread";
+    } else if (pos.indexOf("2.3") >= 0) {
+            psdk=9;
+            pver="2.3";
+            pcode="Gingerbread";
+    } else if (pos.indexOf("2.2") >= 0) {
+            psdk=8;
+            pver="2.2";
+            pcode="Froyo";
+    } else if (pos.indexOf("2.1") >= 0) {
+            psdk=7;
+            pver="2.1";
+            pcode="Eclair";
+    } else if (pos.indexOf("2.0.1") >= 0 || pos.indexOf("2.01") >= 0) {
+            psdk=6;
+            pver="2.0";
+            pcode="Eclair";
+    } else if (pos.indexOf("2.0") >= 0) {
+            psdk=5;
+            pver="2.0";
+            pcode="Eclair";
+    } else if (pos.indexOf("1.6") >= 0) {
+            psdk=4;
+            pver="1.6";
+            pcode="Donut";
+    } else if (pos.indexOf("1.5") >= 0) {
+            psdk=3;
+            pver="1.5";
+            pcode="Cupcake";
+    } else if (pos.indexOf("1.1") >= 0) {
+            psdk=2;
+            pver="1.1";
+            pcode="Base";
+    } else if (pos.indexOf("1.0") >= 0) {
+            psdk=1;
+            pver="1.0";
+            pcode="Base";
+    }
 </script>
 		<style>
 .status-card-wide.mdl-card {
-  width: 512px;
-  background-color: #4CAF50;
+  width: 90%;
+  max-width: 512px;
 }
 .status-card-wide > .mdl-card__title {
   margin:0 auto;
@@ -49,12 +163,12 @@
   height: 176px;
 }
 .demo-card-wide.mdl-card {
-  width: 512px;
+  width: 90%;
+  max-width: 512px;
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
   height: 176px;
-  background: url('../assets/demos/welcome_card.jpg') center / cover;
 }
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
@@ -94,14 +208,21 @@
 				<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
 				<center>
 					<div class="page-content">
-					<div class="status-card-wide mdl-card mdl-shadow--2dp"  style="text-align: center;">
+					<br />
+					<div id="status_card" class="status-card-wide mdl-card mdl-shadow--2dp"  style="text-align: center;background-color: #4CAF50;">
   <div class="mdl-card__title" >
-  <span class="mdi mdi-checkbox-marked-circle" style="font-size: 120px"></span>
+  <span id="icon_seccess" class="mdi mdi-checkbox-marked-circle" style="font-size: 120px;display:none;"></span>
+  <span id="icon_warning" class="mdi mdi-alert" style="font-size: 120px;display:none;"></span>
+  <span id="icon_error" class="mdi mdi-alert-circle" style="font-size: 120px;display:none;"></span>
   </div>
   <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border" style="background-color: #fff;color:#4caf50">
   <b>
-      EdXposed Framework 90.0-v0.4.1.0_beta (MlgmXyysd) is active
+     <span id="tip">Tip</span>
       </b>
+  </div><div class="mdl-card__supporting-text mdl-card__actions mdl-card--border" style="background-color: #fff;color:#4caf50">
+  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>
   </div>
 </div>
 <br />
@@ -113,7 +234,7 @@
     <span class="mdl-list__item-primary-content">
     <span class="mdi mdi-android" style="font-size: 25px;color:#757575;"></span>
     &nbsp;
-    <script>document.write(pos);</script>
+    <script>document.write("Android " + pver + "(" + pcode + ", API " + psdk + ")");</script>
 </span>
   </li>
   <li class="mdl-list__item">
@@ -125,11 +246,6 @@
   <li class="mdl-list__item">
     <span class="mdl-list__item-primary-content"><span class="mdi mdi-chip" style="font-size: 25px;color:#757575;"></span>&nbsp;
     <script>document.write(navigator.cpuClass);</script>
-  </span>
-  </li>
-  <li class="mdl-list__item">
-    <span class="mdl-list__item-primary-content"><span class="mdi mdi-chip" style="font-size: 25px;color:#757575;"></span>&nbsp;
-    
   </span>
   </li>
 </ul>
@@ -155,5 +271,10 @@
 				</section>
 			</main>
 		</div>
+		<script>
+	 if (psdk>=21) {
+	 $("#icon_success").show();
+	 }
+	 </script>
 	</body>
 </html>
