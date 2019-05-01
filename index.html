@@ -8,11 +8,22 @@
 		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="css/material-icons.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-3.4.0.min.js"></script>
 		<script src="js/material.min.js"></script>
 		<script src="js/mobile-detect.min.js"></script>
-		<script src="js/jquery-3.4.0.min.js"></script>
 	</head>
 	<body>
+		<div id="site-loader" class="load-complete site-loader">
+			<div class="load-position">
+				<h6>Loading</h6>
+				<div class="loading">
+					<div class="loading-line"></div>
+					<div class="loading-break loading-dot-1"></div>
+					<div class="loading-break loading-dot-2"></div>
+					<div class="loading-break loading-dot-3"></div>
+				</div>
+			</div>
+		</div>
 		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 			<header class="mdl-layout__header">
 			<div class="mdl-layout__header-row">
@@ -209,11 +220,19 @@
 									</tr>
 									<tr>
 										<td class="mdl-data-table__cell--non-numeric">Android</td>
-										<td class="mdl-data-table__cell--non-numeric">6and newer</td>
+										<td class="mdl-data-table__cell--non-numeric">6 and newer</td>
 										<td class="mdl-data-table__cell--non-numeric">2.3~8.1</td>
 									</tr>
 								</tbody>
 							</table>
+							<br />
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp md-grey">
+								<div class="mdl-card__actions mdl-card--border">
+									<b>
+									However, use Xposed in Android 7 and lower is still recommend.
+									</b>
+								</div>
+							</div>
 							<br />
 							<div id="text_card_tab2" class="text-card-wide mdl-card mdl-shadow--2dp" style="text-align: center;">
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
@@ -264,7 +283,11 @@
 								</div>
 								<div class="mdl-card__actions mdl-card--border bg-white">
 									<b class="md-grey">1. Magisk</b>
-									1) Install Magisk in recovery. (Magisk v19 and newer is recommend)
+									<br />
+									1) Install Magisk in recovery.
+									<br />
+									( Magisk v19 and newer is recommend. )
+									<br /><br />
 									2) Install Magisk Manager when booted.
 								</div>
 							</div>
@@ -301,19 +324,6 @@
 				</section>
 			</main>
 		</div>
-		<script>
-			$("#get-started").click(function(){
-				$("#scroll-tab-1").removeClass("is-active");
-				$("#tab-1").removeClass("is-active");
-				$("#scroll-tab-2").addClass("is-active");
-				$("#tab-2").addClass("is-active");
-			});
-			$("#i-am-sure").click(function(){
-				$("#scroll-tab-2").removeClass("is-active");
-				$("#tab-2").removeClass("is-active");
-				$("#scroll-tab-3").addClass("is-active");
-				$("#tab-3").addClass("is-active");
-			});
-		</script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
