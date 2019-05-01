@@ -2,184 +2,21 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no,user-scalable=0;" />
-		<title>Elder Drivers Xposed Repository Official Website - MeowCat Studio</title>
+		<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+		<title>EdXposed Framework Repository Official Website - MeowCat Studio</title>
 		<link href="css/material.min.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="css/material-icons.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
 		<script src="js/material.min.js"></script>
 		<script src="js/mobile-detect.min.js"></script>
 		<script src="js/jquery-3.4.0.min.js"></script>
-		<script>  
-    Array.prototype.contains = function(needle) {  
-        for (i in this) {  
-            if (this[i].indexOf(needle) > 0)  
-                return i;  
-        }  
-        return -1;  
-    }  
-    var device_type = navigator.userAgent;
-    var md = new MobileDetect(device_type);
-    var os = md.os();
-    var model = "";  
-    if (os == "iOS") { 
-        os = md.os() + md.version("iPhone");  
-        model = md.mobile();  
-    } else if (os == "AndroidOS") {
-        os = md.version("Android");  
-        var sss = device_type.split(";");  
-        var i = sss.contains("Build/");  
-        if (i > -1) {  
-            model = sss[i].substring(0, sss[i].indexOf("Build/"));  
-        }  
-    }  
-    var pos=os.toString();
-    var pmodel=model;
-    var psdk=0;
-    var pver="0"; 
-    var pcode="Android";
-    if (pos.indexOf("10") >= 0) {
-            psdk=29;
-            pver="10";
-            pcode="Q";
-    } else if (pos.indexOf("9") >= 0) {
-            psdk=28;
-            pver="9";
-            pcode="Pie";
-    } else if (pos.indexOf("8.1") >= 0) {
-            psdk=27;
-            pver="8.1";
-            pcode="Oreo";
-    } else if (pos.indexOf("8") >= 0) {
-            psdk=26;
-            pver="8";
-            pcode="Oreo";
-    } else if (pos.indexOf("7.1") >= 0) {
-            psdk=25;
-            pver="7.1";
-            pcode="Nougat";
-    } else if (pos.indexOf("7") >= 0) {
-            psdk=24;
-            pver="7";
-            pcode="Nougat";
-    } else if (pos.indexOf("6") >= 0) {
-            psdk=23;
-            pver="6";
-            pcode="Marshmallow";
-    } else if (pos.indexOf("5") >= 0) {
-            psdk=21;
-            pver="5";
-            pcode="Lollipop";
-    } else if (pos.indexOf("4.4W") >= 0) {
-            psdk=20;
-            pver="4.4W";
-            pcode="Kit Kat Watch";
-    } else if (pos.indexOf("4.4") >= 0) {
-            psdk=19;
-            pver="4.4";
-            pcode="Kit Kat";
-    } else if (pos.indexOf("4.3") >= 0) {
-            psdk=18;
-            pver="4.3";
-            pcode="Jelly Bean";
-    } else if (pos.indexOf("4.2") >= 0) {
-            psdk=17;
-            pver="4.2";
-            pcode="Jelly Bean";
-    } else if (pos.indexOf("4.1") >= 0) {
-            psdk=16;
-            pver="4.1";
-            pcode="Jelly Bean";
-    } else if (pos.indexOf("4.0.4") >= 0 || pos.indexOf("4.04") >= 0 || pos.indexOf("4.0.3") >= 0 || pos.indexOf("4.03") >= 0) {
-            psdk=15;
-            pver="4.0";
-            pcode="Ice Cream Sandwich";
-    } else if (pos.indexOf("4.0") >= 0) {
-            psdk=14;
-            pver="4.0";
-            pcode="Ice Cream Sandwich";
-    } else if (pos.indexOf("3.2") >= 0) {
-            psdk=13;
-            pver="3.2";
-            pcode="Honey Comb";
-    } else if (pos.indexOf("3.1") >= 0) {
-            psdk=12;
-            pver="3.1";
-            pcode="Honey Comb";
-    } else if (pos.indexOf("3.0") >= 0) {
-            psdk=11;
-            pver="3.0";
-            pcode="Honey Comb";
-    } else if (pos.indexOf("2.3.4") >= 0 || pos.indexOf("2.34") >= 0 || pos.indexOf("2.3.3") >= 0 || pos.indexOf("2.33") >= 0) {
-            psdk=10;
-            pver="2.3";
-            pcode="Gingerbread";
-    } else if (pos.indexOf("2.3") >= 0) {
-            psdk=9;
-            pver="2.3";
-            pcode="Gingerbread";
-    } else if (pos.indexOf("2.2") >= 0) {
-            psdk=8;
-            pver="2.2";
-            pcode="Froyo";
-    } else if (pos.indexOf("2.1") >= 0) {
-            psdk=7;
-            pver="2.1";
-            pcode="Eclair";
-    } else if (pos.indexOf("2.0.1") >= 0 || pos.indexOf("2.01") >= 0) {
-            psdk=6;
-            pver="2.0";
-            pcode="Eclair";
-    } else if (pos.indexOf("2.0") >= 0) {
-            psdk=5;
-            pver="2.0";
-            pcode="Eclair";
-    } else if (pos.indexOf("1.6") >= 0) {
-            psdk=4;
-            pver="1.6";
-            pcode="Donut";
-    } else if (pos.indexOf("1.5") >= 0) {
-            psdk=3;
-            pver="1.5";
-            pcode="Cupcake";
-    } else if (pos.indexOf("1.1") >= 0) {
-            psdk=2;
-            pver="1.1";
-            pcode="Base";
-    } else if (pos.indexOf("1.0") >= 0) {
-            psdk=1;
-            pver="1.0";
-            pcode="Base";
-    }
-</script>
-		<style>
-.status-card-wide.mdl-card {
-  width: 90%;
-  max-width: 512px;
-}
-.status-card-wide > .mdl-card__title {
-  margin:0 auto;
-  color: #fff;
-  height: 176px;
-}
-.demo-card-wide.mdl-card {
-  width: 90%;
-  max-width: 512px;
-}
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 176px;
-}
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
-}
-</style>
 	</head>
 	<body>
 		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 			<header class="mdl-layout__header">
 			<div class="mdl-layout__header-row">
-				<span class="mdl-layout-title">Elder Drivers Xposed Manager</span>
+				<span class="mdl-layout-title">EdXposed</span>
 				<div class="mdl-layout-spacer"></div>
 				<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
 					<i class="material-icons">more_vert</i>
@@ -193,12 +30,12 @@
 				</ul>
 			</div>
 			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-				<a href="#scroll-tab-1" class="mdl-layout__tab is-active">EdXposed Status</a>
-				<a href="#scroll-tab-2" class="mdl-layout__tab">EdXposed</a>
-				<a href="#scroll-tab-3" class="mdl-layout__tab">Riru</a>
-				<a href="#scroll-tab-4" class="mdl-layout__tab">Tab 4</a>
-				<a href="#scroll-tab-5" class="mdl-layout__tab">Tab 5</a>
-				<a href="#scroll-tab-6" class="mdl-layout__tab">Tab 6</a>
+				<a id="tab-1" href="#scroll-tab-1" class="mdl-layout__tab is-active">Home</a>
+				<a id="tab-2" href="#scroll-tab-2" class="mdl-layout__tab">Difference</a>
+				<a id="tab-3" href="#scroll-tab-3" class="mdl-layout__tab">Installation</a>
+				<a id="tab-4" href="#scroll-tab-4" class="mdl-layout__tab">Tab 4</a>
+				<a id="tab-5" href="#scroll-tab-5" class="mdl-layout__tab">Tab 5</a>
+				<a id="tab-6" href="#scroll-tab-6" class="mdl-layout__tab">Tab 6</a>
 			</div>
 			</header>
 			<div class="mdl-layout__drawer">
@@ -206,77 +43,277 @@
 			</div>
 			<main class="mdl-layout__content">
 				<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
-				<center>
-					<div class="page-content">
-					<br />
-					<div id="status_card" class="status-card-wide mdl-card mdl-shadow--2dp"  style="text-align: center;background-color: #4CAF50;">
-  <div class="mdl-card__title" >
-  <span id="icon_seccess" class="mdi mdi-checkbox-marked-circle" style="font-size: 120px;"></span>
-  <span id="icon_warning" class="mdi mdi-alert" style="font-size: 120px;display:none;"></span>
-  <span id="icon_error" class="mdi mdi-alert-circle" style="font-size: 120px;display:none;"></span>
-  </div>
-  <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border" style="background-color: #fff;color:#4caf50">
-  <b>
-     <span id="tip">Tip</span>
-      </b>
-  </div><div class="mdl-card__supporting-text mdl-card__actions mdl-card--border" style="background-color: #fff;color:#4caf50">
-  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
-    </a>
-  </div>
-</div>
-<br />
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__actions mdl-card--border">
-  <b>YOUR DEVICE</b>
-<ul class="mdl-list">
-  <li class="mdl-list__item">
-    <span class="mdl-list__item-primary-content">
-    <span class="mdi mdi-android" style="font-size: 25px;color:#757575;"></span>
-    &nbsp;
-    <script>document.write("Android " + pver + "(" + pcode + ", API " + psdk + ")");</script>
-</span>
-  </li>
-  <li class="mdl-list__item">
-    <span class="mdl-list__item-primary-content"><span class="mdi mdi-cellphone-android" style="font-size: 25px;color:#757575;"></span>
-    &nbsp;
-    <script>document.write(pmodel);</script>
-  </span>
-  </li>
-  <li class="mdl-list__item">
-    <span class="mdl-list__item-primary-content"><span class="mdi mdi-chip" style="font-size: 25px;color:#757575;"></span>&nbsp;
-    <script>document.write(navigator.cpuClass);</script>
-  </span>
-  </li>
-</ul>
-  </div>
-</div>
-					</div>
+					<center>
+						<div class="page-content">
+							<br />
+							<div id="status_card_tab1" class="status-card-wide mdl-card mdl-shadow--2dp">
+								<div class="mdl-card__title" >
+									<svg xmlns="http://www.w3.org/2000/svg" width="120px" height="120px" viewBox="0 0 24 24">
+										<path fill="#FFF" d="M20.5,11H19V7c0,-1.1 -0.9,-2 -2,-2h-4V3.5C13,2.12 11.88,1 10.5,1S8,2.12 8,3.5V5H4c-1.1,0 -1.99,0.9 -1.99,2v3.8H3.5c1.49,0 2.7,1.21 2.7,2.7s-1.21,2.7 -2.7,2.7H2V20c0,1.1 0.9,2 2,2h3.8v-1.5c0,-1.49 1.21,-2.7 2.7,-2.7 1.49,0 2.7,1.21 2.7,2.7V22H17c1.1,0 2,-0.9 2,-2v-4h1.5c1.38,0 2.5,-1.12 2.5,-2.5S21.88,11 20.5,11z"/>
+									</svg>
+								</div>
+								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
+									<b>Welcome to EdXposed Framework official website</b>
+								</div>
+								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" id="get-started">
+										<b>Get Started</b>
+									</a>
+								</div>
+							</div>
+							<br />
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp md-grey">
+								<div class="mdl-card__actions mdl-card--border">
+									<b>
+									EdXposed is a Magisk & Riru module that provides original Xposed frameworks on Android art devices.
+									</b>
+								</div>
+							</div>
+							<br />
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="mdl-card__actions mdl-card--border">
+									<b class="md-grey">Features</b>
+									<ul class="mdl-list">
+										<li class="mdl-list__item">
+											<span class="mdl-list__item-primary-content">
+												<span class="mdi mdi-android md-grey" style="font-size: 25px;"></span>
+												&nbsp;
+												Compatible with Android art.
+											</span>
+										</li>
+										<li class="mdl-list__item">
+											<span class="mdl-list__item-primary-content">
+												<span class="mdi mdi-cellphone-android md-grey" style="font-size: 25px;"></span>
+												&nbsp;
+												Black-list or White-list mode.
+											</span>
+										</li>
+										<li class="mdl-list__item">
+											<span class="mdl-list__item-primary-content">
+												<span class="mdi mdi-chip md-grey" style="font-size: 25px;"></span>
+												&nbsp;
+												Harder to be detected.
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<br />
+						</div>
 					</center>
 				</section>
 				<section class="mdl-layout__tab-panel" id="scroll-tab-2">
-					<div class="page-content"><!-- Your content goes here --></div>
+					<center>
+						<div class="page-content">
+							<br />
+							<div id="status_card_tab2" class="status-card-wide mdl-card mdl-shadow--2dp bg-green" style="text-align: center;">
+								<div class="mdl-card__title" >
+									<span class="mdi mdi-vector-difference" style="font-size: 120px;"></span>
+								</div>
+								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
+									<b>What is EdXposed and Xposed's difference?</b>
+								</div>
+								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
+									<a id="i-am-sure" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green">
+										<b>I am sure</b>
+									</a>
+								</div>
+							</div>
+							<br />
+							<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+								<thead>
+									<tr>
+										<th class="mdl-data-table__cell--non-numeric">Features</th>
+										<th>EdXposed</th>
+										<th>Xposed</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="mdl-data-table__cell--non-numeric">White-list</td>
+										<td class="mdl-data-table__cell--non-numeric">
+											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
+											</label>
+										</td>
+										<td class="mdl-data-table__cell--non-numeric">
+											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+												<input type="checkbox" class="mdl-checkbox__input" disabled />
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td class="mdl-data-table__cell--non-numeric">Black-list</td>
+										<td class="mdl-data-table__cell--non-numeric">
+											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
+											</label>
+										</td>
+										<td class="mdl-data-table__cell--non-numeric">
+											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+												<input type="checkbox" class="mdl-checkbox__input" disabled />
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td class="mdl-data-table__cell--non-numeric">Compat mode</td>
+										<td class="mdl-data-table__cell--non-numeric">
+											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
+											</label>
+										</td>
+										<td class="mdl-data-table__cell--non-numeric">
+											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+												<input type="checkbox" class="mdl-checkbox__input" disabled />
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td class="mdl-data-table__cell--non-numeric">Need reboot</td>
+										<td class="mdl-data-table__cell--non-numeric">
+											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+												<input type="checkbox" class="mdl-checkbox__input" disabled />
+											</label>
+										</td>
+										<td class="mdl-data-table__cell--non-numeric">
+											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td class="mdl-data-table__cell--non-numeric">Stable</td>
+										<td class="mdl-data-table__cell--non-numeric">
+											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+												<input type="checkbox" class="mdl-checkbox__input" disabled />
+											</label>
+										</td>
+										<td class="mdl-data-table__cell--non-numeric">
+											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td class="mdl-data-table__cell--non-numeric">Safetynet</td>
+										<td class="mdl-data-table__cell--non-numeric">
+											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
+											</label>
+										</td>
+										<td class="mdl-data-table__cell--non-numeric">
+											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+												<input type="checkbox" class="mdl-checkbox__input" disabled />
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td class="mdl-data-table__cell--non-numeric">Android</td>
+										<td class="mdl-data-table__cell--non-numeric">6and newer</td>
+										<td class="mdl-data-table__cell--non-numeric">2.3~8.1</td>
+									</tr>
+								</tbody>
+							</table>
+							<br />
+							<div id="text_card_tab2" class="text-card-wide mdl-card mdl-shadow--2dp" style="text-align: center;">
+								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
+									<b>Learn more differents in our Wiki page</b>
+								</div>
+								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" target="_blank" href="wiki">
+										<span class="mdi mdi-open-in-new"></span><b> Wiki</b>
+									</a>
+								</div>
+							</div>
+							<br />
+						</div>
+					</center>
 				</section>
 				<section class="mdl-layout__tab-panel" id="scroll-tab-3">
-					<div class="page-content"><!-- Your content goes here --></div>
+					<center>
+						<div class="page-content">
+							<br />
+							<div id="status_card_tab3" class="status-card-wide mdl-card mdl-shadow--2dp bg-green" style="text-align: center;">
+								<div class="mdl-card__title" >
+									<span class="mdi mdi-cloud-download" style="font-size: 120px;"></span>
+								</div>
+								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
+									<b>How to install EdXposed?</b>
+								</div>
+							</div>
+							<br />
+							<div id="status_card_tab3" class="status-card-wide mdl-card mdl-shadow--2dp bg-green" style="text-align: center;">
+								<div class="mdl-card__title" >
+									<svg width="120px" height="120px" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg">
+										<path fill="#ffffff" d="M332.48,421.18c0,0 3.77,22.45 -0.82,71.95c-5.76,62.06 23.64,160.64 23.64,160.64c0,0 40.1,-98.78 33.1,-162.59c-5.75,-52.45 2.6,-70.79 0.82,-68.33c-30.81,42.57 -56.75,-1.67 -56.75,-1.67z"/>
+										<path fill="#ffffff" d="M407.6,474.45c5.01,38.77 -0.57,60.01 -7.81,101.51c-3.66,20.99 74.78,-63.1 104.86,-113.23c5.02,-8.36 -28.77,32.6 -62.19,3.35c-23.18,-20.28 -27.16,-26.44 -45.18,-44.06c-6.08,-5.94 6.74,24.72 10.32,52.43z"/>
+										<path fill="#ffffff" d="M321.99,425.09c-18.02,17.62 -22,23.78 -45.18,44.06c-33.42,29.25 -67.21,-11.71 -62.19,-3.35c30.08,50.13 108.52,134.22 104.86,113.23c-7.24,-41.5 -12.82,-62.74 -7.81,-101.51c3.58,-27.71 16.4,-58.37 10.32,-52.43z"/>
+										<path fill="#ffffff" d="M399.15,355.87c36.67,10.57 50.89,61.5 87.91,67.8c7.65,1.3 16.27,3.6 26.31,3.12c18.77,-0.9 42.51,-11.51 74.22,-56.5c9.38,-13.3 -23.27,85.66 -105.13,86.86c-59.96,0.88 -66.97,-58.7 -106.93,-60.51c-14.43,-0.65 -15.34,-28.17 -15.34,-28.17c0,0 17.22,-18.86 38.96,-12.6z"/>
+										<path fill="#ffffff" d="M321.51,355.59c-36.67,10.57 -50.89,61.5 -87.91,67.8c-7.65,1.3 -16.27,3.6 -26.31,3.12c-18.77,-0.9 -42.51,-11.51 -74.22,-56.5c-9.38,-13.3 23.27,85.66 105.13,86.86c59.96,0.88 66.97,-58.7 106.93,-60.51c14.43,-0.65 15.34,-28.17 15.34,-28.17c0,0 -17.22,-18.86 -38.96,-12.6z"/>
+										<path fill="#ffffff" d="M458.64,355.09c36.87,27.94 25.88,58.7 46.57,49.92c69.7,-29.55 57.51,-181.21 51.87,-162.87c-31.77,103.41 -100.99,109.2 -167.61,61.63c-13.01,-9.29 48.38,35.57 69.16,51.31z"/>
+										<path fill="#ffffff" d="M330.91,303.77c-66.62,47.56 -135.84,41.78 -167.61,-61.63c-5.63,-18.34 -17.82,133.31 51.87,162.87c20.7,8.78 9.7,-21.98 46.57,-49.92c20.78,-15.75 82.17,-60.6 69.16,-51.31z"/>
+										<path fill="#ffffff" d="M465.61,318c80.43,-3.32 95.29,-135.17 88.96,-119.08c-28.39,72.22 -135.86,45.05 -146.13,90.64c-2.02,8.94 18.2,30.06 57.17,28.45z"/>
+										<path fill="#ffffff" d="M311.95,289.55c-10.27,-45.59 -117.75,-18.41 -146.13,-90.64c-6.32,-16.09 8.53,115.76 88.96,119.08c38.97,1.61 59.19,-19.5 57.17,-28.45z"/>
+										<path fill="#ffffff" d="M403.42,269.47c0,0 43.73,-23.5 81.16,-33.74c34.99,-9.58 61.22,-33.13 64.14,-58.01c2.18,-18.53 -27.05,-53.55 -27.05,-53.55c0,0 -20.51,56.9 -47.41,85.34c-29.28,30.96 -18.15,26.78 -70.84,59.96z"/>
+										<path fill="#ffffff" d="M246.13,209.51c-26.9,-28.44 -47.41,-85.34 -47.41,-85.34c0,0 -29.23,35.01 -27.05,53.55c2.93,24.88 29.16,48.43 64.14,58.01c37.43,10.25 81.16,33.74 81.16,33.74c-52.69,-33.18 -41.55,-29 -70.84,-59.96z"/>
+										<path fill="#ffffff" d="M398.12,265.85c47.36,-38.85 72.53,-89.54 113.51,-145.02c7.73,-10.46 -34.58,-35.7 -51.31,-37.37c-16.73,-1.67 -30.77,59.79 -32.35,95.94c-1.44,33.01 -36.21,91.68 -29.84,86.45z"/>
+										<path fill="#ffffff" d="M292.42,179.39c-1.58,-36.15 -15.62,-97.61 -32.35,-95.94c-16.73,1.67 -59.04,26.91 -51.31,37.37c40.98,55.48 66.14,106.17 113.51,145.02c6.37,5.22 -28.4,-53.45 -29.84,-86.45z"/>
+										<path fill="#ffffff" d="M402.86,140.35c3.34,-26.76 15.37,-46.32 39.32,-62.75c-21.17,-7.08 -38.77,-12.83 -47.97,-5.3c-9.2,7.53 -34.2,32.7 -30.85,73.68c3.34,40.98 0.18,194.09 7.43,191.25c3.9,-104.87 37.09,-135 32.07,-196.89z"/>
+										<path fill="#ffffff" d="M349.59,337.24c7.24,2.83 4.08,-150.27 7.43,-191.25c3.34,-40.98 -21.65,-66.16 -30.85,-73.68c-9.2,-7.53 -26.8,-1.78 -47.97,5.3c23.95,16.43 35.98,35.98 39.32,62.75c-5.02,61.89 28.17,92.02 32.07,196.89z"/>
+									</svg>
+								</div>
+								<div class="mdl-card__actions mdl-card--border bg-white">
+									<b class="md-grey">1. Magisk</b>
+									1) Install Magisk in recovery. (Magisk v19 and newer is recommend)
+									2) Install Magisk Manager when booted.
+								</div>
+							</div>
+							<br />
+						</div>
+					</center>
 				</section>
 				<section class="mdl-layout__tab-panel" id="scroll-tab-4">
-					<div class="page-content"><!-- Your content goes here --></div>
+					<center>
+						<div class="page-content">
+							<br />
+							<!-- Your content goes here -->
+							<br />
+						</div>
+					</center>
 				</section>
 				<section class="mdl-layout__tab-panel" id="scroll-tab-5">
-					<div class="page-content"><!-- Your content goes here --></div>
+					<center>
+						<div class="page-content">
+							<br />
+							<!-- Your content goes here -->
+							<br />
+						</div>
+					</center>
 				</section>
 				<section class="mdl-layout__tab-panel" id="scroll-tab-6">
-					<div class="page-content"><!-- Your content goes here --></div>
+					<center>
+						<div class="page-content">
+							<br />
+							<!-- Your content goes here -->
+							<br />
+						</div>
+					</center>
 				</section>
 			</main>
 		</div>
 		<script>
-		alert(typeof(psdk));
-	 if (psdk>=21) {
-	 $("#icon_success").show();
-	 document.getElementById("tip").innerHTML="You can use EdXposed.";
-	 }
-	 </script>
+			$("#get-started").click(function(){
+				$("#scroll-tab-1").removeClass("is-active");
+				$("#tab-1").removeClass("is-active");
+				$("#scroll-tab-2").addClass("is-active");
+				$("#tab-2").addClass("is-active");
+			});
+			$("#i-am-sure").click(function(){
+				$("#scroll-tab-2").removeClass("is-active");
+				$("#tab-2").removeClass("is-active");
+				$("#scroll-tab-3").addClass("is-active");
+				$("#tab-3").addClass("is-active");
+			});
+		</script>
 	</body>
 </html>

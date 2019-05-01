@@ -1,0 +1,43 @@
+.bg-white {
+	background-color: #FFF;
+}
+.bg-green {
+	background-color: #4CAF50;
+}
+
+.md-green {
+	color: #4CAF50;
+}
+
+.md-grey {
+	color: #757575;
+}
+
+.status-card-wide.mdl-card {
+	width: 90%;
+	max-width: 512px;
+	text-align: center;
+	background-color: #4CAF50;
+	min-height: 0;
+}
+.status-card-wide > .mdl-card__title {
+	margin: 0 auto;
+	color: #FFF;
+	height: 176px;
+}
+
+.demo-card-wide.mdl-card {
+	width: 90%;
+	max-width: 512px;
+	min-height: 0;
+}
+.demo-card-wide > .mdl-card__title {
+	color: #FFF;
+	height: 176px;
+}
+
+.text-card-wide.mdl-card {
+	width: 90%;
+	max-width: 512px;
+	min-height: 0;
+}
