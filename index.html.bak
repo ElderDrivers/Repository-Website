@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no,user-scalable=0;" />
+		<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
 		<title>Elder Drivers Xposed Repository Official Website - MeowCat Studio</title>
 		<link href="css/material.min.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="css/material-icons.css" media="all" rel="stylesheet" type="text/css" />
 		<script src="js/material.min.js"></script>
-		<script src="js/mobile-detect.min.js"></script>
 		<script src="js/jquery-3.4.0.min.js"></script>
+		<script src="js/mobile-detect.min.js"></script>
 		<script>  
     Array.prototype.contains = function(needle) {  
         for (i in this) {  
@@ -211,7 +211,7 @@
 					<br />
 					<div id="status_card" class="status-card-wide mdl-card mdl-shadow--2dp"  style="text-align: center;background-color: #4CAF50;">
   <div class="mdl-card__title" >
-  <span id="icon_seccess" class="mdi mdi-checkbox-marked-circle" style="font-size: 120px;"></span>
+  <span id="icon_seccess" class="mdi mdi-checkbox-marked-circle" style="font-size: 120px;display:none;"></span>
   <span id="icon_warning" class="mdi mdi-alert" style="font-size: 120px;display:none;"></span>
   <span id="icon_error" class="mdi mdi-alert-circle" style="font-size: 120px;display:none;"></span>
   </div>
@@ -272,10 +272,8 @@
 			</main>
 		</div>
 		<script>
-		alert(typeof(psdk));
 	 if (psdk>=21) {
 	 $("#icon_success").show();
-	 document.getElementById("tip").innerHTML="You can use EdXposed.";
 	 }
 	 </script>
 	</body>
