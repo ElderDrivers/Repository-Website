@@ -42,14 +42,6 @@
 	min-height: 0;
 }
 
-.site-loader {
-	transition: all .4s;
-}
-
-.load-completed {
-	opacity: 0;
-}
-
 .load-complete {
 	position: fixed;
 	overflow: hidden;

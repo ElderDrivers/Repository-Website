@@ -12,6 +12,5 @@ $("#i-am-sure").click(function(){
 });
 window.onload = function() {
 	setTimeout(function() {
- 	$("#site-loader").addClass("load-completed");
+		$("#site-loader").fadeOut();
 	},500);
-}
