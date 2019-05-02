@@ -42,6 +42,18 @@
 	min-height: 0;
 }
 
+.loader {
+	position: fixed;
+	overflow: hidden;
+	background-color: rgb(33,150,243);
+	width: 100%;
+	height: 1px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
 .load-complete {
 	position: fixed;
 	overflow: hidden;
