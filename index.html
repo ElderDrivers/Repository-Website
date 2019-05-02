@@ -1,16 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<script src="js/language.js"></script>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width,maximum-scale=1, user-scalable=0" />
-		<title>EdXposed Framework Repository Official Website - MeowCat Studio</title>
+		<title>EdXposed Framework Official Website - MeowCat Studio</title>
 		<link href="css/material.min.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="css/material-icons.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
-		<script src="js/jquery-3.4.0.min.js"></script>
-		<script src="js/material.min.js"></script>
-		<script src="js/mobile-detect.min.js"></script>
 	</head>
 	<body>
 		<div id="site-loader" class="load-complete">
@@ -18,10 +16,7 @@
 			<div class="load-position">
 				<h6>Loading</h6>
 				<div class="loading">
-					<div class="loading-line"></div>
-					<div class="loading-break loading-dot-1"></div>
-					<div class="loading-break loading-dot-2"></div>
-					<div class="loading-break loading-dot-3"></div>
+					<div class="mdl-progress mdl-js-progress mdl-progress__indeterminate loading-line"></div>
 				</div>
 			</div>
 		</div>
@@ -35,23 +30,22 @@
 				</button>
 				<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
 					for="demo-menu-lower-right">
-					<li class="mdl-menu__item"></li>
-					<li class="mdl-menu__item">Soft Reboot???</li>
-					<li disabled class="mdl-menu__item">Reboot to recovery???</li>
-					<li class="mdl-menu__item">Optimize app now</li>
+					<li class="mdl-menu__item" id="en_US">English(United States) [en-US]</li>
+					<li class="mdl-menu__item" id="zh_rCN">简体中文(中国) [zh-rCN]</li>
+					<li class="mdl-menu__item" id="clearLang"><script>document.write(MENU_CLEAR_LANG_SETTINGS);</script></li>
 				</ul>
 			</div>
 			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-				<a id="tab-1" href="#scroll-tab-1" class="mdl-layout__tab is-active">Home</a>
-				<a id="tab-2" href="#scroll-tab-2" class="mdl-layout__tab">Difference</a>
-				<a id="tab-3" href="#scroll-tab-3" class="mdl-layout__tab">Installation</a>
-				<a id="tab-4" href="#scroll-tab-4" class="mdl-layout__tab">Tab 4</a>
-				<a id="tab-5" href="#scroll-tab-5" class="mdl-layout__tab">Tab 5</a>
-				<a id="tab-6" href="#scroll-tab-6" class="mdl-layout__tab">Tab 6</a>
+				<a id="tab-1" href="#scroll-tab-1" class="mdl-layout__tab is-active"><script>document.write(SCROLL_TAB_HOME);</script></a>
+				<a id="tab-2" href="#scroll-tab-2" class="mdl-layout__tab"><script>document.write(SCROLL_TAB_DIFF);</script></a>
+				<a id="tab-3" href="#scroll-tab-3" class="mdl-layout__tab"><script>document.write(SCROLL_TAB_INST);</script></a>
+				<a id="tab-4" href="#scroll-tab-4" class="mdl-layout__tab"><script>document.write(SCROLL_TAB_UNINST);</script></a>
+				<a id="tab-5" href="#scroll-tab-5" class="mdl-layout__tab">FAQ</a>
+				<a id="tab-6" href="#scroll-tab-6" class="mdl-layout__tab"><script>document.write(SCROLL_TAB_CREDIT);</script></a>
 			</div>
 			</header>
 			<div class="mdl-layout__drawer">
-				<span class="mdl-layout-title">Title</span>
+				<span class="mdl-layout-title"><script>document.write(DRAWER_TITLE);</script></span>
 			</div>
 			<main class="mdl-layout__content">
 				<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
@@ -65,14 +59,14 @@
 									</svg>
 								</div>
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b>Welcome to EdXposed Framework official website</b>
+									<b><script>document.write(TAB_HOME_STATUS);</script></b>
 								</div>
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
 									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" id="get-started">
-										<b>Get Started</b>
+										<b><script>document.write(TAB_HOME_GET);</script></b>
 									</a>
 									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" id="why-edxposed">
-										<b>Why EdXposed</b>
+										<b><script>document.write(TAB_HOME_WHY);</script></b>
 									</a>
 								</div>
 							</div>
@@ -80,34 +74,34 @@
 							<div class="demo-card-wide mdl-card mdl-shadow--2dp md-grey">
 								<div class="mdl-card__actions mdl-card--border">
 									<b>
-									EdXposed is a Magisk & Riru module that provides original Xposed frameworks on Android art devices.
+									<script>document.write(TAB_HOME_DESC);</script>
 									</b>
 								</div>
 							</div>
 							<br />
 							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
 								<div class="mdl-card__actions mdl-card--border">
-									<b class="md-grey">Features</b>
+									<b class="md-grey"><script>document.write(TAB_HOME_FEATURES);</script></b>
 									<ul class="mdl-list">
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
 												<span class="mdi mdi-android md-grey" style="font-size: 25px;"></span>
 												&nbsp;
-												Compatible with Android art.
+												<script>document.write(TAB_HOME_COMPAT);</script>
 											</span>
 										</li>
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
 												<span class="mdi mdi-cellphone-android md-grey" style="font-size: 25px;"></span>
 												&nbsp;
-												Black-list or White-list mode.
+												<script>document.write(TAB_HOME_MULTIPLE);</script>
 											</span>
 										</li>
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
 												<span class="mdi mdi-chip md-grey" style="font-size: 25px;"></span>
 												&nbsp;
-												Harder to be detected.
+												<script>document.write(TAB_HOME_DETECT);</script>
 											</span>
 										</li>
 									</ul>
@@ -126,11 +120,11 @@
 									<span class="mdi mdi-vector-difference" style="font-size: 120px;"></span>
 								</div>
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b>What is EdXposed and Xposed's difference?</b>
+									<b><script>document.write(TAB_DIFF_STATUS);</script></b>
 								</div>
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
 									<a id="i-am-sure" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green">
-										<b>I am sure</b>
+										<b><script>document.write(TAB_DIFF_SURE);</script></b>
 									</a>
 								</div>
 							</div>
@@ -138,14 +132,14 @@
 							<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
 								<thead>
 									<tr>
-										<th class="mdl-data-table__cell--non-numeric">Features</th>
+										<th class="mdl-data-table__cell--non-numeric"><script>document.write(TAB_HOME_FEATURES);</script></th>
 										<th>EdXposed</th>
 										<th>Xposed</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td class="mdl-data-table__cell--non-numeric">White-list</td>
+										<td class="mdl-data-table__cell--non-numeric"><script>document.write(TAB_DIFF_WHITE);</script></td>
 										<td class="mdl-data-table__cell--non-numeric">
 											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
 												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
@@ -158,7 +152,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td class="mdl-data-table__cell--non-numeric">Black-list</td>
+										<td class="mdl-data-table__cell--non-numeric"><script>document.write(TAB_DIFF_BLACK);</script></td>
 										<td class="mdl-data-table__cell--non-numeric">
 											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
 												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
@@ -171,7 +165,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td class="mdl-data-table__cell--non-numeric">Compat mode</td>
+										<td class="mdl-data-table__cell--non-numeric"><script>document.write(TAB_DIFF_COMPAT);</script></td>
 										<td class="mdl-data-table__cell--non-numeric">
 											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
 												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
@@ -184,7 +178,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td class="mdl-data-table__cell--non-numeric">Need reboot</td>
+										<td class="mdl-data-table__cell--non-numeric"><script>document.write(TAB_DIFF_REBOOT);</script></td>
 										<td class="mdl-data-table__cell--non-numeric">
 											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
 												<input type="checkbox" class="mdl-checkbox__input" disabled />
@@ -197,7 +191,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td class="mdl-data-table__cell--non-numeric">Stable</td>
+										<td class="mdl-data-table__cell--non-numeric"><script>document.write(TAB_DIFF_STABLE);</script></td>
 										<td class="mdl-data-table__cell--non-numeric">
 											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
 												<input type="checkbox" class="mdl-checkbox__input" disabled />
@@ -224,7 +218,7 @@
 									</tr>
 									<tr>
 										<td class="mdl-data-table__cell--non-numeric">Android</td>
-										<td class="mdl-data-table__cell--non-numeric">6 and newer</td>
+										<td class="mdl-data-table__cell--non-numeric">6.0+</td>
 										<td class="mdl-data-table__cell--non-numeric">2.3~8.1</td>
 									</tr>
 								</tbody>
@@ -233,14 +227,14 @@
 							<div class="demo-card-wide mdl-card mdl-shadow--2dp md-grey">
 								<div class="mdl-card__actions mdl-card--border">
 									<b>
-									However, use Xposed in Android 7 and lower is still recommend.
+									<script>document.write(TAB_DIFF_DESC);</script>
 									</b>
 								</div>
 							</div>
 							<br />
 							<div id="text_card_tab2" class="text-card-wide mdl-card mdl-shadow--2dp" style="text-align: center;">
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b>Learn more differents in our Wiki page</b>
+									<b><script>document.write(TAB_DIFF_MORE);</script></b>
 								</div>
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
 									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" target="_blank" href="wiki">
@@ -261,7 +255,7 @@
 									<span class="mdi mdi-cloud-download" style="font-size: 120px;"></span>
 								</div>
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b>How to install EdXposed?</b>
+									<b><script>document.write(TAB_INST_STATUS);</script></b>
 								</div>
 							</div>
 							<br />
@@ -286,13 +280,17 @@
 									</svg>
 								</div>
 								<div class="mdl-card__actions mdl-card--border bg-white">
-									<b class="md-grey">1. Magisk</b>
+									<b class="md-grey"><script>document.write(TAB_INST_REQUIRE);</script></b>
 									<br />
-									1) Install Magisk in recovery.
-									<br />
-									( Magisk v19 and newer is recommend. )
+									<script>document.write(TAB_INST_REQUIRE_DESC_1);</script>
 									<br /><br />
-									2) Install Magisk Manager when booted.
+									<script>document.write(TAB_INST_REQUIRE_DESC_2);</script>
+									<br />
+									<script>document.write(TAB_INST_REQUIRE_DESC_3);</script>
+									<br /><br />
+									<script>document.write(TAB_INST_REQUIRE_DESC_4);</script>
+									<br />
+									<script>document.write(TAB_INST_REQUIRE_DESC_5);</script>
 								</div>
 							</div>
 							<br />
@@ -301,17 +299,42 @@
 									<span class="mdi mdi-settings-box" style="font-size: 120px;"></span>
 								</div>
 								<div class="mdl-card__actions mdl-card--border bg-white">
-									<b class="md-grey">2. Modules</b>
+									<b class="md-grey"><script>document.write(TAB_INST_MODULES);</script></b>
 									<br />
-									1) Download the latest version EdXposed Manager in <a href="https://github.com/ElderDrivers/EdXposedManager/releases" target="_blank">Github Releases</a>, and install it.
+									<script>document.write(TAB_INST_MODULES_DESC_1);</script> <a class="md-blue" href="https://github.com/ElderDrivers/EdXposedManager/releases" target="_blank">Github Releases</a> <script>document.write(TAB_INST_MODULES_DESC_2);</script>
 									<br /><br />
-									2) Download EdXposed & Riru in EdXposed Manager.
+									<script>document.write(TAB_INST_MODULES_DESC_3);</script>
 									<br /><br />
-									3) Install these modules in Magisk Manager or recovery.
+									<script>document.write(TAB_INST_MODULES_DESC_4);</script>
 									<br /><br />
-									4) Install Riru app: <a href="https://github.com/RikkaApps/Riru/releases/download/v17/app-release.apk">Github Release</a> (optional)
+									<script>document.write(TAB_INST_MODULES_DESC_5);</script>
 									<br /><br />
-									5) Reboot and have fun :)
+									<script>document.write(TAB_INST_MODULES_DESC_6);</script> <a class="md-blue" href="https://github.com/RikkaApps/Riru/releases/download/v17/app-release.apk">Github Release</a> <script>document.write(TAB_INST_MODULES_DESC_7);</script>
+									<br /><br />
+									<script>document.write(TAB_INST_MODULES_DESC_8);</script>
+								</div>
+							</div>
+							<br />
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="mdl-card__actions mdl-card--border">
+									<script>document.write(TAB_INST_ALSO_1);</script> <a class="md-blue" href="https://github.com/solohsu/XposedInstaller/releases" target="_blank">EdXposed Installer</a> <script>document.write(TAB_INST_ALSO_2);</script>
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/RikkaApps/Riru/releases" target="_blank">
+										<span class="mdi mdi-open-in-new"></span><b> Riru</b>
+									</a>
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/ElderDrivers/EdXposed/releases" target="_blank">
+										<span class="mdi mdi-open-in-new"></span><b> EdXposed</b>
+									</a>
+								</div>
+							</div>
+							<br />
+							<div id="text_card_tab2" class="text-card-wide mdl-card mdl-shadow--2dp" style="text-align: center;">
+								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
+									<b><script>document.write(TAB_INST_TROUBLE);</script></b>
+								</div>
+								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" id="faq">
+										<b>FAQ</b>
+									</a>
 								</div>
 							</div>
 							<br />
@@ -347,6 +370,12 @@
 				</section>
 			</main>
 		</div>
-		<script src="js/main.js"></script>
+		<div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
+			<div class="mdl-snackbar__text"></div>
+			<button class="mdl-snackbar__action" type="button"></button>
+		</div>
+		<script src="js/jquery-3.4.0.min.js"></script>
+		<script src="js/material.min.js" async></script>
+		<script src="js/main.js" async defer></script>
 	</body>
 </html>
