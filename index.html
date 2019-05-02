@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<script src="js/language.js"></script>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width,maximum-scale=1, user-scalable=0" />
 		<title>EdXposed Framework Official Website - MeowCat Studio</title>
@@ -9,6 +8,8 @@
 		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="css/material-icons.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-3.4.0.min.js"></script>
+		<script src="js/language.js"></script>
 	</head>
 	<body>
 		<div id="site-loader" class="load-complete">
@@ -32,20 +33,20 @@
 					for="demo-menu-lower-right">
 					<li class="mdl-menu__item" id="en_US">English(United States) [en-US]</li>
 					<li class="mdl-menu__item" id="zh_rCN">简体中文(中国) [zh-rCN]</li>
-					<li class="mdl-menu__item" id="clearLang"><script>document.write(MENU_CLEAR_LANG_SETTINGS);</script></li>
+					<li class="mdl-menu__item lang" id="clearLang" key="MENU_CLEAR_LANG_SETTINGS">&lt;Missing MENU_CLEAR_LANG_SETTINGS&gt;</li>
 				</ul>
 			</div>
 			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-				<a id="tab-1" href="#scroll-tab-1" class="mdl-layout__tab is-active"><script>document.write(SCROLL_TAB_HOME);</script></a>
-				<a id="tab-2" href="#scroll-tab-2" class="mdl-layout__tab"><script>document.write(SCROLL_TAB_DIFF);</script></a>
-				<a id="tab-3" href="#scroll-tab-3" class="mdl-layout__tab"><script>document.write(SCROLL_TAB_INST);</script></a>
-				<a id="tab-4" href="#scroll-tab-4" class="mdl-layout__tab"><script>document.write(SCROLL_TAB_UNINST);</script></a>
+				<a id="tab-1" href="#scroll-tab-1" class="mdl-layout__tab lang is-active" key="SCROLL_TAB_HOME">&lt;Missing SCROLL_TAB_HOME&gt;</a>
+				<a id="tab-2" href="#scroll-tab-2" class="mdl-layout__tab lang" key="SCROLL_TAB_DIFF">&lt;Missing SCROLL_TAB_DIFF&gt;</a>
+				<a id="tab-3" href="#scroll-tab-3" class="mdl-layout__tab lang" key="SCROLL_TAB_INST">&lt;Missing SCROLL_TAB_INST&gt;</a>
+				<a id="tab-4" href="#scroll-tab-4" class="mdl-layout__tab lang" key="SCROLL_TAB_UNINST">&lt;Missing SCROLL_TAB_UNINST&gt;</a>
 				<a id="tab-5" href="#scroll-tab-5" class="mdl-layout__tab">FAQ</a>
-				<a id="tab-6" href="#scroll-tab-6" class="mdl-layout__tab"><script>document.write(SCROLL_TAB_CREDIT);</script></a>
+				<a id="tab-6" href="#scroll-tab-6" class="mdl-layout__tab lang" key="SCROLL_TAB_CREDIT">&lt;Missing SCROLL_TAB_CREDIT&gt;</a>
 			</div>
 			</header>
 			<div class="mdl-layout__drawer">
-				<span class="mdl-layout-title"><script>document.write(DRAWER_TITLE);</script></span>
+				<span class="mdl-layout-title lang" key="DRAWER_TITLE">&lt;Missing DRAWER_TITLE&gt;</span>
 			</div>
 			<main class="mdl-layout__content">
 				<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
@@ -59,49 +60,47 @@
 									</svg>
 								</div>
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b><script>document.write(TAB_HOME_STATUS);</script></b>
+									<b class="lang" key="TAB_HOME_STATUS">&lt;Missing TAB_HOME_STATUS&gt;</b>
 								</div>
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
 									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" id="get-started">
-										<b><script>document.write(TAB_HOME_GET);</script></b>
+										<b class="lang" key="TAB_HOME_GET">&lt;Missing TAB_HOME_GET&gt;</b>
 									</a>
 									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" id="why-edxposed">
-										<b><script>document.write(TAB_HOME_WHY);</script></b>
+										<b class="lang" key="TAB_HOME_WHY">&lt;Missing TAB_HOME_WHY&gt;</b>
 									</a>
 								</div>
 							</div>
 							<br />
 							<div class="demo-card-wide mdl-card mdl-shadow--2dp md-grey">
 								<div class="mdl-card__actions mdl-card--border">
-									<b>
-									<script>document.write(TAB_HOME_DESC);</script>
-									</b>
+									<b class="lang" key="TAB_HOME_DESC">&lt;Missing TAB_HOME_DESC&gt;</b>
 								</div>
 							</div>
 							<br />
 							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
 								<div class="mdl-card__actions mdl-card--border">
-									<b class="md-grey"><script>document.write(TAB_HOME_FEATURES);</script></b>
+									<b class="md-grey lang" key="TAB_HOME_FEATURES">&lt;Missing TAB_HOME_FEATURES&gt;</b>
 									<ul class="mdl-list">
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
 												<span class="mdi mdi-android md-grey" style="font-size: 25px;"></span>
 												&nbsp;
-												<script>document.write(TAB_HOME_COMPAT);</script>
+												<span class="lang" key="TAB_HOME_COMPAT">&lt;Missing TAB_HOME_COMPAT&gt;</span>
 											</span>
 										</li>
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
 												<span class="mdi mdi-cellphone-android md-grey" style="font-size: 25px;"></span>
 												&nbsp;
-												<script>document.write(TAB_HOME_MULTIPLE);</script>
+												<span class="lang" key="TAB_HOME_MULTIPLE">&lt;Missing TAB_HOME_MULTIPLE&gt;</span>
 											</span>
 										</li>
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
 												<span class="mdi mdi-chip md-grey" style="font-size: 25px;"></span>
 												&nbsp;
-												<script>document.write(TAB_HOME_DETECT);</script>
+												<span class="lang" key="TAB_HOME_DETECT">&lt;Missing TAB_HOME_DETECT&gt;</span>
 											</span>
 										</li>
 									</ul>
@@ -120,11 +119,11 @@
 									<span class="mdi mdi-vector-difference" style="font-size: 120px;"></span>
 								</div>
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b><script>document.write(TAB_DIFF_STATUS);</script></b>
+									<b class="lang" key="TAB_DIFF_STATUS">&lt;Missing TAB_DIFF_STATUS&gt;</b>
 								</div>
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
 									<a id="i-am-sure" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green">
-										<b><script>document.write(TAB_DIFF_SURE);</script></b>
+										<b class="lang" key="TAB_DIFF_SURE">&lt;Missing TAB_DIFF_SURE&gt;</b>
 									</a>
 								</div>
 							</div>
@@ -132,14 +131,14 @@
 							<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
 								<thead>
 									<tr>
-										<th class="mdl-data-table__cell--non-numeric"><script>document.write(TAB_HOME_FEATURES);</script></th>
+										<th class="mdl-data-table__cell--non-numeric lang" key="TAB_HOME_FEATURES">&lt;Missing TAB_HOME_FEATURES&gt;</th>
 										<th>EdXposed</th>
 										<th>Xposed</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td class="mdl-data-table__cell--non-numeric"><script>document.write(TAB_DIFF_WHITE);</script></td>
+										<td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_WHITE">&lt;Missing TAB_DIFF_WHITE&gt;</td>
 										<td class="mdl-data-table__cell--non-numeric">
 											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
 												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
@@ -152,7 +151,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td class="mdl-data-table__cell--non-numeric"><script>document.write(TAB_DIFF_BLACK);</script></td>
+										<td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_BLACK">&lt;Missing TAB_DIFF_BLACK&gt;</td>
 										<td class="mdl-data-table__cell--non-numeric">
 											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
 												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
@@ -165,7 +164,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td class="mdl-data-table__cell--non-numeric"><script>document.write(TAB_DIFF_COMPAT);</script></td>
+										<td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_COMPAT">&lt;Missing TAB_DIFF_COMPAT&gt;</td>
 										<td class="mdl-data-table__cell--non-numeric">
 											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
 												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
@@ -178,7 +177,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td class="mdl-data-table__cell--non-numeric"><script>document.write(TAB_DIFF_REBOOT);</script></td>
+										<td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_REBOOT">&lt;Missing TAB_DIFF_REBOOT&gt;</td>
 										<td class="mdl-data-table__cell--non-numeric">
 											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
 												<input type="checkbox" class="mdl-checkbox__input" disabled />
@@ -191,7 +190,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td class="mdl-data-table__cell--non-numeric"><script>document.write(TAB_DIFF_STABLE);</script></td>
+										<td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_STABLE">&lt;Missing TAB_DIFF_STABLE&gt;</td>
 										<td class="mdl-data-table__cell--non-numeric">
 											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
 												<input type="checkbox" class="mdl-checkbox__input" disabled />
@@ -226,15 +225,13 @@
 							<br />
 							<div class="demo-card-wide mdl-card mdl-shadow--2dp md-grey">
 								<div class="mdl-card__actions mdl-card--border">
-									<b>
-									<script>document.write(TAB_DIFF_DESC);</script>
-									</b>
+									<b class="lang" key="TAB_DIFF_DESC">&lt;Missing TAB_DIFF_DESC&gt;</b>
 								</div>
 							</div>
 							<br />
 							<div id="text_card_tab2" class="text-card-wide mdl-card mdl-shadow--2dp" style="text-align: center;">
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b><script>document.write(TAB_DIFF_MORE);</script></b>
+									<b class="lang" key="TAB_DIFF_MORE">&lt;Missing TAB_DIFF_MORE&gt;</b>
 								</div>
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
 									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" target="_blank" href="wiki">
@@ -255,7 +252,7 @@
 									<span class="mdi mdi-cloud-download" style="font-size: 120px;"></span>
 								</div>
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b><script>document.write(TAB_INST_STATUS);</script></b>
+									<b class="lang" key="TAB_INST_STATUS">&lt;Missing TAB_INST_STATUS&gt;</b>
 								</div>
 							</div>
 							<br />
@@ -280,17 +277,17 @@
 									</svg>
 								</div>
 								<div class="mdl-card__actions mdl-card--border bg-white">
-									<b class="md-grey"><script>document.write(TAB_INST_REQUIRE);</script></b>
+									<b class="md-grey lang" key="TAB_INST_REQUIRE">&lt;Missing TAB_INST_REQUIRE&gt;</b>
 									<br />
-									<script>document.write(TAB_INST_REQUIRE_DESC_1);</script>
+									<span class="lang" key="TAB_INST_REQUIRE_DESC_1">&lt;Missing TAB_INST_REQUIRE_DESC_1&gt;</span>
 									<br /><br />
-									<script>document.write(TAB_INST_REQUIRE_DESC_2);</script>
+									<span class="lang" key="TAB_INST_REQUIRE_DESC_2">&lt;Missing TAB_INST_REQUIRE_DESC_2&gt;</span>
 									<br />
-									<script>document.write(TAB_INST_REQUIRE_DESC_3);</script>
+									<span class="lang" key="TAB_INST_REQUIRE_DESC_3">&lt;Missing TAB_INST_REQUIRE_DESC_3&gt;</span>
 									<br /><br />
-									<script>document.write(TAB_INST_REQUIRE_DESC_4);</script>
+									<span class="lang" key="TAB_INST_REQUIRE_DESC_4">&lt;Missing TAB_INST_REQUIRE_DESC_4&gt;</span>
 									<br />
-									<script>document.write(TAB_INST_REQUIRE_DESC_5);</script>
+									<span class="lang" key="TAB_INST_REQUIRE_DESC_5">&lt;Missing TAB_INST_REQUIRE_DESC_5&gt;</span>
 								</div>
 							</div>
 							<br />
@@ -299,25 +296,25 @@
 									<span class="mdi mdi-settings-box" style="font-size: 120px;"></span>
 								</div>
 								<div class="mdl-card__actions mdl-card--border bg-white">
-									<b class="md-grey"><script>document.write(TAB_INST_MODULES);</script></b>
+									<b class="md-grey lang" key="TAB_INST_MODULES">&lt;Missing TAB_INST_MODULES&gt;</b>
 									<br />
-									<script>document.write(TAB_INST_MODULES_DESC_1);</script> <a class="md-blue" href="https://github.com/ElderDrivers/EdXposedManager/releases" target="_blank">Github Releases</a> <script>document.write(TAB_INST_MODULES_DESC_2);</script>
+									<span class="lang" key="TAB_INST_MODULES_DESC_1">&lt;Missing TAB_INST_MODULES_DESC_1&gt;</span> <a class="md-blue" href="https://github.com/ElderDrivers/EdXposedManager/releases" target="_blank">Github Releases</a> <span class="lang" key="TAB_INST_MODULES_DESC_2">&lt;Missing TAB_INST_MODULES_DESC_2&gt;</span>
 									<br /><br />
-									<script>document.write(TAB_INST_MODULES_DESC_3);</script>
+									<span class="lang" key="TAB_INST_MODULES_DESC_3">&lt;Missing TAB_INST_MODULES_DESC_3&gt;</span>
 									<br /><br />
-									<script>document.write(TAB_INST_MODULES_DESC_4);</script>
+									<span class="lang" key="TAB_INST_MODULES_DESC_4">&lt;Missing TAB_INST_MODULES_DESC_4&gt;</span>
 									<br /><br />
-									<script>document.write(TAB_INST_MODULES_DESC_5);</script>
+									<span class="lang" key="TAB_INST_MODULES_DESC_5">&lt;Missing TAB_INST_MODULES_DESC_5&gt;</span>
 									<br /><br />
-									<script>document.write(TAB_INST_MODULES_DESC_6);</script> <a class="md-blue" href="https://github.com/RikkaApps/Riru/releases/download/v17/app-release.apk">Github Release</a> <script>document.write(TAB_INST_MODULES_DESC_7);</script>
+									<span class="lang" key="TAB_INST_MODULES_DESC_6">&lt;Missing TAB_INST_MODULES_DESC_6&gt;</span> <a class="md-blue" href="https://github.com/RikkaApps/Riru/releases/download/v17/app-release.apk">Github Release</a> <span class="lang" key="TAB_INST_MODULES_DESC_7">&lt;Missing TAB_INST_MODULES_DESC_7&gt;</span>
 									<br /><br />
-									<script>document.write(TAB_INST_MODULES_DESC_8);</script>
+									<span class="lang" key="TAB_INST_MODULES_DESC_8">&lt;Missing TAB_INST_MODULES_DESC_8&gt;</span>
 								</div>
 							</div>
 							<br />
 							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
 								<div class="mdl-card__actions mdl-card--border">
-									<script>document.write(TAB_INST_ALSO_1);</script> <a class="md-blue" href="https://github.com/solohsu/XposedInstaller/releases" target="_blank">EdXposed Installer</a> <script>document.write(TAB_INST_ALSO_2);</script>
+									<span class="lang" key="TAB_INST_ALSO_1">&lt;Missing TAB_INST_ALSO_1&gt;</span> <a class="md-blue" href="https://github.com/solohsu/XposedInstaller/releases" target="_blank">EdXposed Installer</a> <span class="lang" key="TAB_INST_ALSO_2">&lt;Missing TAB_INST_ALSO_2&gt;</span>
 									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/RikkaApps/Riru/releases" target="_blank">
 										<span class="mdi mdi-open-in-new"></span><b> Riru</b>
 									</a>
@@ -329,7 +326,7 @@
 							<br />
 							<div id="text_card_tab2" class="text-card-wide mdl-card mdl-shadow--2dp" style="text-align: center;">
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b><script>document.write(TAB_INST_TROUBLE);</script></b>
+									<b class="lang" key="TAB_INST_TROUBLE">&lt;Missing TAB_INST_TROUBLE&gt;</b>
 								</div>
 								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
 									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" id="faq">
@@ -374,7 +371,6 @@
 			<div class="mdl-snackbar__text"></div>
 			<button class="mdl-snackbar__action" type="button"></button>
 		</div>
-		<script src="js/jquery-3.4.0.min.js"></script>
 		<script src="js/material.min.js" async></script>
 		<script src="js/main.js" async defer></script>
 	</body>

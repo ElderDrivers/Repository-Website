@@ -56,8 +56,11 @@ $("#clearLang").click(function(){
 function refresh() {
 	window.location.reload();
 }
-window.onload = function() {
+$(document).ready(function() {
+	$(".lang").each(function(index, element) {
+		$(this).text(language[lang][$(this).attr("key")]);
+	});
 	setTimeout(function() {
 		$("#site-loader").fadeOut();
 	},500);
-}
+});
