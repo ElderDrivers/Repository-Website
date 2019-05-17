@@ -1,6 +1,6 @@
 # 2019.5.17 Magisk v19.1 (EdXposed)
 
-Add EdXposed SELinux rules for support Huawei devices.
+Add EdXposed needed SELinux rules to magiskinit, for those ROMs which don't support sepolicy dynamically tweaking e.g. EMUI 9.
 
 ### Magisk v19.1 changelog:
 
