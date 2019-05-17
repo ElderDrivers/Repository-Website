@@ -2,7 +2,7 @@
 
 Add EdXposed SELinux rules for support Huawei devices.
 
-Magisk v19.1 changelog:
+### Magisk v19.1 changelog:
 
 Finally, a lovely stable release!
 
