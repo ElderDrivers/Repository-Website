@@ -1,8 +1,13 @@
 .bg-white {
 	background-color: #FFF;
 }
+
 .bg-green {
 	background-color: #4CAF50;
+}
+
+.bg-light-blue {
+	background-color: rgb(89,180,250);
 }
 
 .md-green {
@@ -17,11 +22,15 @@
 	color: rgb(33,150,243);
 }
 
+.md-light-blue {
+	color: rgb(89,180,250);
+}
+
 .status-card-wide.mdl-card {
 	width: 90%;
 	max-width: 512px;
 	text-align: center;
-	background-color: #4CAF50;
+	background-color: rgb(89,180,250);
 	min-height: 0;
 }
 .status-card-wide > .mdl-card__title {
@@ -58,7 +67,7 @@
 
 ::-webkit-scrollbar-thumb:vertical{
 	height: 5px;
-	background-color: rgb(33,150,243);
+	background-color: rgb(89,180,250);
 	-webkit-border-radius: 6px;
 }
 
@@ -71,7 +80,7 @@
 .loader {
 	position: fixed;
 	overflow: hidden;
-	background-color: rgb(33,150,243);
+	background-color: rgb(89,180,250);
 	width: 100%;
 	height: 1px;
 	left: 0;
@@ -98,7 +107,7 @@
 	color: #000000;
 	font-size: 24px;
 	font-weight: 400;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .load-complete .load-position {

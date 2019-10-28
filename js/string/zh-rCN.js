@@ -1,58 +1,67 @@
-console.log("lang: zh-rCN");
+console.log("Language: zh-rCN");
+console.log("Translator: MlgmXyysd");
 
-var language={
-	"zh-rCN": {
-		"MENU_CLEAR_LANG_SETTINGS": "清除语言设置",
+const language = {
+    "zh-rCN": {
+        "MENU_CLEAR_LANG_SETTINGS": "清除语言设置",
 
-		"SCROLL_TAB_HOME": "主页",
-		"SCROLL_TAB_DIFF": "差异",
-		"SCROLL_TAB_INST": "安装",
-		"SCROLL_TAB_UNINST": "卸载",
-		"SCROLL_TAB_CREDIT": "关于",
+        "SCROLL_TAB_HOME": "主页",
+        "SCROLL_TAB_DIFF": "差异",
+        "SCROLL_TAB_INST": "安装",
+        "SCROLL_TAB_UNINST": "卸载",
+        "SCROLL_TAB_CREDIT": "关于",
 
-		"DRAWER_TITLE": "Title",
+        "DRAWER_TITLE": "Title",
 
-		"TAB_HOME_STATUS": "欢迎来到 EdXposed 框架官网",
-		"TAB_HOME_GET": "开始",
-		"TAB_HOME_WHY": "为什么选择 EdXposed",
-		"TAB_HOME_DESC": "EdXposed 是一个 Magisk 和 Riru 模块，它为运行 Android ART 的设备上提供原生 Xposed 框架。",
-		"TAB_HOME_FEATURES": "特性",
-		"TAB_HOME_COMPAT": "兼容 Android ART。",
-		"TAB_HOME_MULTIPLE": "多种运行模式。",
-		"TAB_HOME_DETECT": "很难被检测到。",
+        "TAB_HOME_STATUS": "欢迎来到 EdXposed 框架官网",
+        "TAB_HOME_GET": "开始",
+        "TAB_HOME_WHY": "为什么选择 EdXposed",
+        "TAB_HOME_DESC": "EdXposed 是一个 Magisk 和 Riru 模块，它为运行高版本 Android ART 的设备上提供原生 Xposed 框架。",
+        "TAB_HOME_FEATURES": "特性",
+        "TAB_HOME_COMPAT": "兼容最新 Android ART",
+        "TAB_HOME_MULTIPLE": "多种运行模式",
+        "TAB_HOME_DETECT": "更难被检测到",
 
-		"TAB_DIFF_STATUS": "EdXposed 和 Xposed 的差别在哪",
-		"TAB_DIFF_SURE": "明白",
-		"TAB_DIFF_WHITE": "白名单",
-		"TAB_DIFF_BLACK": "黑名单",
-		"TAB_DIFF_COMPAT": "兼容模式",
-		"TAB_DIFF_REBOOT": "需要重启",
-		"TAB_DIFF_STABLE": "稳定性",
-		"TAB_DIFF_DESC": "但是，我们仍然建议运行 Android 7 以下的用户使用 Xposed 。",
-		"TAB_DIFF_MORE": "更多详情请参考 Wiki 页",
+        "TAB_DIFF_STATUS": "为什么选择 EdXposed",
+        "TAB_DIFF_SURE": "明白",
+        "TAB_DIFF_WHITE": "白名单",
+        "TAB_DIFF_BLACK": "黑名单",
+        "TAB_DIFF_COMPAT": "兼容模式",
+        "TAB_DIFF_REBOOT": "无需重启",
+        "TAB_DIFF_MORE": "更多详情请参考 Wiki 页",
 
-		"TAB_INST_STATUS": "如何安装 EdXposed",
-		"TAB_INST_REQUIRE": "1. 设备需求",
-		"TAB_INST_REQUIRE_DESC_1": "1) Android Marshmallow 或更高版本。",
-		"TAB_INST_REQUIRE_DESC_2": "2) 已安装 Magisk v17 或更高版本。",
-		"TAB_INST_REQUIRE_DESC_3": "(推荐使用 Magisk v19 或更高版本。)",
-		"TAB_INST_REQUIRE_DESC_4": "3) 已安装Riru v10 或更高版本。",
-		"TAB_INST_REQUIRE_DESC_5": "(如未安装，请参考步骤2。)",
-		"TAB_INST_MODULES": "2. 安装模块",
-		"TAB_INST_MODULES_DESC_1": "1) 在",
-		"TAB_INST_MODULES_DESC_2": "下载最新版 EdXposed Manager 并安装。 *",
-		"TAB_INST_MODULES_DESC_3": "2) 在 EdXposed Manager 内下载 EdXposed 。",
-		"TAB_INST_MODULES_DESC_4": "3) 如果你未安装 Riru ，在 EdXposed Manager 内下载它。",
-		"TAB_INST_MODULES_DESC_5": "4) 在 Magisk Manager 或 recovery 中安装上述模块。",
-		"TAB_INST_MODULES_DESC_6": "5) 安装 Riru 应用:",
-		"TAB_INST_MODULES_DESC_7": "(可选)",
-		"TAB_INST_MODULES_DESC_8": "6) 重启即可 :)",
-		"TAB_INST_ALSO_1": "* 你也可以使用",
-		"TAB_INST_ALSO_2": "并且手动下载上述模块:",
-		"TAB_INST_TROUBLE": "遇到了问题？"
-	}
-}
+        "TAB_INST_STATUS": "如何安装 EdXposed",
+        "TAB_INST_REQUIRE": "1. 设备需求",
+        "TAB_INST_REQUIRE_DESC_1": "Android Oreo 或更高版本",
+        "TAB_INST_REQUIRE_DESC_2": "v19 或更高版本",
+        "TAB_INST_REQUIRE_DESC_3": "要使用最新的 EdXposed 或 华为/荣耀 设备, 请将 Magisk 更新通道更改为:",
+        "TAB_INST_INSTALL": "2. 安装模块",
+        "TAB_INST_INSTALL_DESC_1": "下载并安装 EdXposed Manager 最新版本:",
+        "TAB_INST_INSTALL_DESC_2": "在 Magisk Manager 中下载 Riru 和 EdXposed",
+        "TAB_INST_INSTALL_DESC_3": "安装 Riru 应用 (可选):",
+        "TAB_INST_INSTALL_DESC_4": "重启即可 :)",
+        "TAB_INST_MANUALLY": "* 你也可以手动下载上述模块:",
+        "TAB_INST_TROUBLE": "遇到了问题?",
 
-TOAST_LANG_CHANGE="更改将会在刷新后生效";
+        "TAB_UNINST_STATUS": "如何卸载 EdXposed",
+        "TAB_UNINST_TROUBLE": "遇到了问题需要卸载?",
+        "TAB_UNINST_MAGISK": "使用 Magisk Manager (推荐)",
+        "TAB_UNINST_MAGISK_DESC_1": "在 Magisk Manager 中点击 EdXposed 模块的 \"垃圾桶\" 按钮",
+        "TAB_UNINST_MAGISK_DESC_2": "重启即可",
+        "TAB_UNINST_RECOVERY": "使用 Recovery",
+        "TAB_UNINST_RECOVERY_DESC_1": "确保你的设备已安装自定义的 Recovery (比如 TWRP) 并且可以挂载 data 分区",
+        "TAB_UNINST_RECOVERY_DESC_2": "在 EdXposed Manager 中下载 EdXposedUninstaller 或",
+        "TAB_UNINST_RECOVERY_DESC_3": "手动下载",
+        "TAB_UNINST_RECOVERY_DESC_4": "在 Recovery 中刷入 EdXposedUninstaller 并重启",
+        "TAB_UNINST_FILE": "使用文件管理器",
+        "TAB_UNINST_FILE_DESC_1": "打开文件管理器(或者终端)并给予 Root 权限",
+        "TAB_UNINST_FILE_DESC_2": "删除 \"/data/adb/modules/riru_edxposed(_sandhoook)\"",
+        "TAB_UNINST_FILE_DESC_3": "删除 \"/data/misc/riru/modules/edxp\"",
+        "TAB_UNINST_FILE_DESC_4": "重启即可",
+        "TAB_UNINST_RESTORE": "上面的方法不起作用? 试试恢复出厂设置 (格式化 userdata 分区)"
+    }
+};
 
-TOAST_BTN_REFRESH="刷新";
+TOAST_LANG_CHANGE = "更改将会在刷新后生效";
+
+TOAST_BTN_REFRESH = "刷新";

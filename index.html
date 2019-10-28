@@ -1,377 +1,543 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width,maximum-scale=1, user-scalable=0" />
-		<title>EdXposed Framework Official Website - MeowCat Studio</title>
-		<link href="css/material.min.css" media="all" rel="stylesheet" type="text/css" />
-		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-		<link href="css/material-icons.css" media="all" rel="stylesheet" type="text/css" />
-		<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
-		<script src="js/jquery-3.4.0.min.js"></script>
-		<script src="js/language.js"></script>
-	</head>
-	<body>
-		<div id="site-loader" class="load-complete">
-			<div class="loader"></div>
-			<div class="load-position">
-				<h6>Loading</h6>
-				<div class="loading">
-					<div class="mdl-progress mdl-js-progress mdl-progress__indeterminate loading-line"></div>
-				</div>
-			</div>
-		</div>
-		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-			<header class="mdl-layout__header">
-			<div class="mdl-layout__header-row">
-				<span class="mdl-layout-title">EdXposed</span>
-				<div class="mdl-layout-spacer"></div>
-				<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
-					<i class="material-icons">more_vert</i>
-				</button>
-				<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-					for="demo-menu-lower-right">
-					<li class="mdl-menu__item" id="en_US">English(United States) [en-US]</li>
-					<li class="mdl-menu__item" id="zh_rCN">简体中文(中国) [zh-rCN]</li>
-					<li class="mdl-menu__item lang" id="clearLang" key="MENU_CLEAR_LANG_SETTINGS">&lt;Missing MENU_CLEAR_LANG_SETTINGS&gt;</li>
-				</ul>
-			</div>
-			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-				<a id="tab-1" href="#scroll-tab-1" class="mdl-layout__tab lang is-active" key="SCROLL_TAB_HOME">&lt;Missing SCROLL_TAB_HOME&gt;</a>
-				<a id="tab-2" href="#scroll-tab-2" class="mdl-layout__tab lang" key="SCROLL_TAB_DIFF">&lt;Missing SCROLL_TAB_DIFF&gt;</a>
-				<a id="tab-3" href="#scroll-tab-3" class="mdl-layout__tab lang" key="SCROLL_TAB_INST">&lt;Missing SCROLL_TAB_INST&gt;</a>
-				<a id="tab-4" href="#scroll-tab-4" class="mdl-layout__tab lang" key="SCROLL_TAB_UNINST">&lt;Missing SCROLL_TAB_UNINST&gt;</a>
-				<a id="tab-5" href="#scroll-tab-5" class="mdl-layout__tab">FAQ</a>
-				<a id="tab-6" href="#scroll-tab-6" class="mdl-layout__tab lang" key="SCROLL_TAB_CREDIT">&lt;Missing SCROLL_TAB_CREDIT&gt;</a>
-			</div>
-			</header>
-			<div class="mdl-layout__drawer">
-				<span class="mdl-layout-title lang" key="DRAWER_TITLE">&lt;Missing DRAWER_TITLE&gt;</span>
-			</div>
-			<main class="mdl-layout__content">
-				<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
-					<center>
-						<div class="page-content">
-							<br />
-							<div id="status_card_tab1" class="status-card-wide mdl-card mdl-shadow--2dp">
-								<div class="mdl-card__title" >
-									<svg xmlns="http://www.w3.org/2000/svg" width="120px" height="120px" viewBox="0 0 24 24">
-										<path fill="#FFF" d="M20.5,11H19V7c0,-1.1 -0.9,-2 -2,-2h-4V3.5C13,2.12 11.88,1 10.5,1S8,2.12 8,3.5V5H4c-1.1,0 -1.99,0.9 -1.99,2v3.8H3.5c1.49,0 2.7,1.21 2.7,2.7s-1.21,2.7 -2.7,2.7H2V20c0,1.1 0.9,2 2,2h3.8v-1.5c0,-1.49 1.21,-2.7 2.7,-2.7 1.49,0 2.7,1.21 2.7,2.7V22H17c1.1,0 2,-0.9 2,-2v-4h1.5c1.38,0 2.5,-1.12 2.5,-2.5S21.88,11 20.5,11z"/>
-									</svg>
-								</div>
-								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b class="lang" key="TAB_HOME_STATUS">&lt;Missing TAB_HOME_STATUS&gt;</b>
-								</div>
-								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
-									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" id="get-started">
-										<b class="lang" key="TAB_HOME_GET">&lt;Missing TAB_HOME_GET&gt;</b>
-									</a>
-									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" id="why-edxposed">
-										<b class="lang" key="TAB_HOME_WHY">&lt;Missing TAB_HOME_WHY&gt;</b>
-									</a>
-								</div>
-							</div>
-							<br />
-							<div class="demo-card-wide mdl-card mdl-shadow--2dp md-grey">
-								<div class="mdl-card__actions mdl-card--border">
-									<b class="lang" key="TAB_HOME_DESC">&lt;Missing TAB_HOME_DESC&gt;</b>
-								</div>
-							</div>
-							<br />
-							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-								<div class="mdl-card__actions mdl-card--border">
-									<b class="md-grey lang" key="TAB_HOME_FEATURES">&lt;Missing TAB_HOME_FEATURES&gt;</b>
-									<ul class="mdl-list">
-										<li class="mdl-list__item">
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="minimum-scale=1, initial-scale=1, width=device-width,maximum-scale=1, user-scalable=0"
+          name="viewport"/>
+    <title>EdXposed Framework Official Website - MeowCat Studio</title>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+    <link href="css/material.min.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="css/material-icons.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/language.js"></script>
+</head>
+<body>
+<div class="load-complete" id="site-loader">
+    <div class="loader"></div>
+    <div class="load-position">
+        <h6>Loading</h6>
+        <div class="loading">
+            <div class="mdl-progress mdl-js-progress mdl-progress__indeterminate loading-line"></div>
+        </div>
+        <br/>
+        <h6>If there is no response for a long time, please <a onclick="refresh();">refresh</a>.</h6>
+    </div>
+</div>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">EdXposed</span>
+            <div class="mdl-layout-spacer"></div>
+            <button class="mdl-button mdl-js-button mdl-button--icon" id="menu-lower-right">
+                <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="menu-lower-right">
+                <li class="mdl-menu__item" id="en_US">English(United States) [en-US]</li>
+                <li class="mdl-menu__item" id="zh_rCN">简体中文(中国) [zh-rCN]</li>
+                <li class="mdl-menu__item lang" id="clearLang" key="MENU_CLEAR_LANG_SETTINGS">&lt;Missing
+                    MENU_CLEAR_LANG_SETTINGS&gt;
+                </li>
+            </ul>
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a class="mdl-layout__tab lang is-active" href="#scroll-tab-1" id="tab-1" key="SCROLL_TAB_HOME">&lt;Missing
+                SCROLL_TAB_HOME&gt;</a>
+            <a class="mdl-layout__tab lang" href="#scroll-tab-2" id="tab-2" key="SCROLL_TAB_DIFF">&lt;Missing
+                SCROLL_TAB_DIFF&gt;</a>
+            <a class="mdl-layout__tab lang" href="#scroll-tab-3" id="tab-3" key="SCROLL_TAB_INST">&lt;Missing
+                SCROLL_TAB_INST&gt;</a>
+            <a class="mdl-layout__tab lang" href="#scroll-tab-4" id="tab-4" key="SCROLL_TAB_UNINST">&lt;Missing
+                SCROLL_TAB_UNINST&gt;</a>
+            <a class="mdl-layout__tab" href="#scroll-tab-5" id="tab-5">FAQ</a>
+            <a class="mdl-layout__tab lang" href="#scroll-tab-6" id="tab-6" key="SCROLL_TAB_CREDIT">&lt;Missing
+                SCROLL_TAB_CREDIT&gt;</a>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title lang" key="DRAWER_TITLE">&lt;Missing DRAWER_TITLE&gt;</span>
+    </div>
+    <main class="mdl-layout__content">
+        <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+            <!--suppress HtmlDeprecatedTag -->
+            <center>
+                <div class="page-content">
+                    <br/>
+                    <div class="status-card-wide mdl-card mdl-shadow--2dp" id="status_card_tab1">
+                        <div class="mdl-card__title">
+                            <span class="mdi mdi-puzzle" style="font-size: 120px;"></span>
+                        </div>
+                        <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
+                            <b class="lang" key="TAB_HOME_STATUS">&lt;Missing TAB_HOME_STATUS&gt;</b>
+                        </div>
+                        <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green"
+                               id="get-started">
+                                <b class="lang" key="TAB_HOME_GET">&lt;Missing TAB_HOME_GET&gt;</b>
+                            </a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green"
+                               id="why-edxposed">
+                                <b class="lang" key="TAB_HOME_WHY">&lt;Missing TAB_HOME_WHY&gt;</b>
+                            </a>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp md-grey">
+                        <div class="mdl-card__actions mdl-card--border">
+                            <b class="lang" key="TAB_HOME_DESC">&lt;Missing TAB_HOME_DESC&gt;</b>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                        <div class="mdl-card__actions mdl-card--border">
+                            <b class="md-grey lang" key="TAB_HOME_FEATURES">&lt;Missing TAB_HOME_FEATURES&gt;</b>
+                            <ul class="mdl-list">
+                                <li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
 												<span class="mdi mdi-android md-grey" style="font-size: 25px;"></span>
 												&nbsp;
-												<span class="lang" key="TAB_HOME_COMPAT">&lt;Missing TAB_HOME_COMPAT&gt;</span>
+												<span class="lang"
+                                                      key="TAB_HOME_COMPAT">&lt;Missing TAB_HOME_COMPAT&gt;</span>
 											</span>
-										</li>
-										<li class="mdl-list__item">
+                                </li>
+                                <li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
-												<span class="mdi mdi-cellphone-android md-grey" style="font-size: 25px;"></span>
+												<span class="mdi mdi-cellphone-android md-grey"
+                                                      style="font-size: 25px;"></span>
 												&nbsp;
 												<span class="lang" key="TAB_HOME_MULTIPLE">&lt;Missing TAB_HOME_MULTIPLE&gt;</span>
 											</span>
-										</li>
-										<li class="mdl-list__item">
+                                </li>
+                                <li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
 												<span class="mdi mdi-chip md-grey" style="font-size: 25px;"></span>
 												&nbsp;
-												<span class="lang" key="TAB_HOME_DETECT">&lt;Missing TAB_HOME_DETECT&gt;</span>
+												<span class="lang"
+                                                      key="TAB_HOME_DETECT">&lt;Missing TAB_HOME_DETECT&gt;</span>
 											</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<br />
-						</div>
-					</center>
-				</section>
-				<section class="mdl-layout__tab-panel" id="scroll-tab-2">
-					<center>
-						<div class="page-content">
-							<br />
-							<div id="status_card_tab2" class="status-card-wide mdl-card mdl-shadow--2dp bg-green" style="text-align: center;">
-								<div class="mdl-card__title" >
-									<span class="mdi mdi-vector-difference" style="font-size: 120px;"></span>
-								</div>
-								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b class="lang" key="TAB_DIFF_STATUS">&lt;Missing TAB_DIFF_STATUS&gt;</b>
-								</div>
-								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
-									<a id="i-am-sure" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green">
-										<b class="lang" key="TAB_DIFF_SURE">&lt;Missing TAB_DIFF_SURE&gt;</b>
-									</a>
-								</div>
-							</div>
-							<br />
-							<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
-								<thead>
-									<tr>
-										<th class="mdl-data-table__cell--non-numeric lang" key="TAB_HOME_FEATURES">&lt;Missing TAB_HOME_FEATURES&gt;</th>
-										<th>EdXposed</th>
-										<th>Xposed</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_WHITE">&lt;Missing TAB_DIFF_WHITE&gt;</td>
-										<td class="mdl-data-table__cell--non-numeric">
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
-											</label>
-										</td>
-										<td class="mdl-data-table__cell--non-numeric">
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-												<input type="checkbox" class="mdl-checkbox__input" disabled />
-											</label>
-										</td>
-									</tr>
-									<tr>
-										<td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_BLACK">&lt;Missing TAB_DIFF_BLACK&gt;</td>
-										<td class="mdl-data-table__cell--non-numeric">
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
-											</label>
-										</td>
-										<td class="mdl-data-table__cell--non-numeric">
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-												<input type="checkbox" class="mdl-checkbox__input" disabled />
-											</label>
-										</td>
-									</tr>
-									<tr>
-										<td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_COMPAT">&lt;Missing TAB_DIFF_COMPAT&gt;</td>
-										<td class="mdl-data-table__cell--non-numeric">
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
-											</label>
-										</td>
-										<td class="mdl-data-table__cell--non-numeric">
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-												<input type="checkbox" class="mdl-checkbox__input" disabled />
-											</label>
-										</td>
-									</tr>
-									<tr>
-										<td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_REBOOT">&lt;Missing TAB_DIFF_REBOOT&gt;</td>
-										<td class="mdl-data-table__cell--non-numeric">
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-												<input type="checkbox" class="mdl-checkbox__input" disabled />
-											</label>
-										</td>
-										<td class="mdl-data-table__cell--non-numeric">
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
-											</label>
-										</td>
-									</tr>
-									<tr>
-										<td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_STABLE">&lt;Missing TAB_DIFF_STABLE&gt;</td>
-										<td class="mdl-data-table__cell--non-numeric">
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-												<input type="checkbox" class="mdl-checkbox__input" disabled />
-											</label>
-										</td>
-										<td class="mdl-data-table__cell--non-numeric">
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
-											</label>
-										</td>
-									</tr>
-									<tr>
-										<td class="mdl-data-table__cell--non-numeric">Safetynet</td>
-										<td class="mdl-data-table__cell--non-numeric">
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-												<input type="checkbox" class="mdl-checkbox__input" checked disabled />
-											</label>
-										</td>
-										<td class="mdl-data-table__cell--non-numeric">
-											<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-												<input type="checkbox" class="mdl-checkbox__input" disabled />
-											</label>
-										</td>
-									</tr>
-									<tr>
-										<td class="mdl-data-table__cell--non-numeric">Android</td>
-										<td class="mdl-data-table__cell--non-numeric">6.0+</td>
-										<td class="mdl-data-table__cell--non-numeric">2.3~8.1</td>
-									</tr>
-								</tbody>
-							</table>
-							<br />
-							<div class="demo-card-wide mdl-card mdl-shadow--2dp md-grey">
-								<div class="mdl-card__actions mdl-card--border">
-									<b class="lang" key="TAB_DIFF_DESC">&lt;Missing TAB_DIFF_DESC&gt;</b>
-								</div>
-							</div>
-							<br />
-							<div id="text_card_tab2" class="text-card-wide mdl-card mdl-shadow--2dp" style="text-align: center;">
-								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b class="lang" key="TAB_DIFF_MORE">&lt;Missing TAB_DIFF_MORE&gt;</b>
-								</div>
-								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
-									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" target="_blank" href="wiki">
-										<span class="mdi mdi-open-in-new"></span><b> Wiki</b>
-									</a>
-								</div>
-							</div>
-							<br />
-						</div>
-					</center>
-				</section>
-				<section class="mdl-layout__tab-panel" id="scroll-tab-3">
-					<center>
-						<div class="page-content">
-							<br />
-							<div id="status_card_tab3" class="status-card-wide mdl-card mdl-shadow--2dp bg-green" style="text-align: center;">
-								<div class="mdl-card__title" >
-									<span class="mdi mdi-cloud-download" style="font-size: 120px;"></span>
-								</div>
-								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b class="lang" key="TAB_INST_STATUS">&lt;Missing TAB_INST_STATUS&gt;</b>
-								</div>
-							</div>
-							<br />
-							<div class="status-card-wide mdl-card mdl-shadow--2dp bg-green" style="text-align: center;">
-								<div class="mdl-card__title" >
-									<svg width="120px" height="120px" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg">
-										<path fill="#ffffff" d="M332.48,421.18c0,0 3.77,22.45 -0.82,71.95c-5.76,62.06 23.64,160.64 23.64,160.64c0,0 40.1,-98.78 33.1,-162.59c-5.75,-52.45 2.6,-70.79 0.82,-68.33c-30.81,42.57 -56.75,-1.67 -56.75,-1.67z"/>
-										<path fill="#ffffff" d="M407.6,474.45c5.01,38.77 -0.57,60.01 -7.81,101.51c-3.66,20.99 74.78,-63.1 104.86,-113.23c5.02,-8.36 -28.77,32.6 -62.19,3.35c-23.18,-20.28 -27.16,-26.44 -45.18,-44.06c-6.08,-5.94 6.74,24.72 10.32,52.43z"/>
-										<path fill="#ffffff" d="M321.99,425.09c-18.02,17.62 -22,23.78 -45.18,44.06c-33.42,29.25 -67.21,-11.71 -62.19,-3.35c30.08,50.13 108.52,134.22 104.86,113.23c-7.24,-41.5 -12.82,-62.74 -7.81,-101.51c3.58,-27.71 16.4,-58.37 10.32,-52.43z"/>
-										<path fill="#ffffff" d="M399.15,355.87c36.67,10.57 50.89,61.5 87.91,67.8c7.65,1.3 16.27,3.6 26.31,3.12c18.77,-0.9 42.51,-11.51 74.22,-56.5c9.38,-13.3 -23.27,85.66 -105.13,86.86c-59.96,0.88 -66.97,-58.7 -106.93,-60.51c-14.43,-0.65 -15.34,-28.17 -15.34,-28.17c0,0 17.22,-18.86 38.96,-12.6z"/>
-										<path fill="#ffffff" d="M321.51,355.59c-36.67,10.57 -50.89,61.5 -87.91,67.8c-7.65,1.3 -16.27,3.6 -26.31,3.12c-18.77,-0.9 -42.51,-11.51 -74.22,-56.5c-9.38,-13.3 23.27,85.66 105.13,86.86c59.96,0.88 66.97,-58.7 106.93,-60.51c14.43,-0.65 15.34,-28.17 15.34,-28.17c0,0 -17.22,-18.86 -38.96,-12.6z"/>
-										<path fill="#ffffff" d="M458.64,355.09c36.87,27.94 25.88,58.7 46.57,49.92c69.7,-29.55 57.51,-181.21 51.87,-162.87c-31.77,103.41 -100.99,109.2 -167.61,61.63c-13.01,-9.29 48.38,35.57 69.16,51.31z"/>
-										<path fill="#ffffff" d="M330.91,303.77c-66.62,47.56 -135.84,41.78 -167.61,-61.63c-5.63,-18.34 -17.82,133.31 51.87,162.87c20.7,8.78 9.7,-21.98 46.57,-49.92c20.78,-15.75 82.17,-60.6 69.16,-51.31z"/>
-										<path fill="#ffffff" d="M465.61,318c80.43,-3.32 95.29,-135.17 88.96,-119.08c-28.39,72.22 -135.86,45.05 -146.13,90.64c-2.02,8.94 18.2,30.06 57.17,28.45z"/>
-										<path fill="#ffffff" d="M311.95,289.55c-10.27,-45.59 -117.75,-18.41 -146.13,-90.64c-6.32,-16.09 8.53,115.76 88.96,119.08c38.97,1.61 59.19,-19.5 57.17,-28.45z"/>
-										<path fill="#ffffff" d="M403.42,269.47c0,0 43.73,-23.5 81.16,-33.74c34.99,-9.58 61.22,-33.13 64.14,-58.01c2.18,-18.53 -27.05,-53.55 -27.05,-53.55c0,0 -20.51,56.9 -47.41,85.34c-29.28,30.96 -18.15,26.78 -70.84,59.96z"/>
-										<path fill="#ffffff" d="M246.13,209.51c-26.9,-28.44 -47.41,-85.34 -47.41,-85.34c0,0 -29.23,35.01 -27.05,53.55c2.93,24.88 29.16,48.43 64.14,58.01c37.43,10.25 81.16,33.74 81.16,33.74c-52.69,-33.18 -41.55,-29 -70.84,-59.96z"/>
-										<path fill="#ffffff" d="M398.12,265.85c47.36,-38.85 72.53,-89.54 113.51,-145.02c7.73,-10.46 -34.58,-35.7 -51.31,-37.37c-16.73,-1.67 -30.77,59.79 -32.35,95.94c-1.44,33.01 -36.21,91.68 -29.84,86.45z"/>
-										<path fill="#ffffff" d="M292.42,179.39c-1.58,-36.15 -15.62,-97.61 -32.35,-95.94c-16.73,1.67 -59.04,26.91 -51.31,37.37c40.98,55.48 66.14,106.17 113.51,145.02c6.37,5.22 -28.4,-53.45 -29.84,-86.45z"/>
-										<path fill="#ffffff" d="M402.86,140.35c3.34,-26.76 15.37,-46.32 39.32,-62.75c-21.17,-7.08 -38.77,-12.83 -47.97,-5.3c-9.2,7.53 -34.2,32.7 -30.85,73.68c3.34,40.98 0.18,194.09 7.43,191.25c3.9,-104.87 37.09,-135 32.07,-196.89z"/>
-										<path fill="#ffffff" d="M349.59,337.24c7.24,2.83 4.08,-150.27 7.43,-191.25c3.34,-40.98 -21.65,-66.16 -30.85,-73.68c-9.2,-7.53 -26.8,-1.78 -47.97,5.3c23.95,16.43 35.98,35.98 39.32,62.75c-5.02,61.89 28.17,92.02 32.07,196.89z"/>
-									</svg>
-								</div>
-								<div class="mdl-card__actions mdl-card--border bg-white">
-									<b class="md-grey lang" key="TAB_INST_REQUIRE">&lt;Missing TAB_INST_REQUIRE&gt;</b>
-									<br />
-									<span class="lang" key="TAB_INST_REQUIRE_DESC_1">&lt;Missing TAB_INST_REQUIRE_DESC_1&gt;</span>
-									<br /><br />
-									<span class="lang" key="TAB_INST_REQUIRE_DESC_2">&lt;Missing TAB_INST_REQUIRE_DESC_2&gt;</span>
-									<br />
-									<span class="lang" key="TAB_INST_REQUIRE_DESC_3">&lt;Missing TAB_INST_REQUIRE_DESC_3&gt;</span>
-									<br /><br />
-									<span class="lang" key="TAB_INST_REQUIRE_DESC_4">&lt;Missing TAB_INST_REQUIRE_DESC_4&gt;</span>
-									<br />
-									<span class="lang" key="TAB_INST_REQUIRE_DESC_5">&lt;Missing TAB_INST_REQUIRE_DESC_5&gt;</span>
-								</div>
-							</div>
-							<br />
-							<div class="status-card-wide mdl-card mdl-shadow--2dp bg-green" style="text-align: center;">
-								<div class="mdl-card__title" >
-									<span class="mdi mdi-settings-box" style="font-size: 120px;"></span>
-								</div>
-								<div class="mdl-card__actions mdl-card--border bg-white">
-									<b class="md-grey lang" key="TAB_INST_MODULES">&lt;Missing TAB_INST_MODULES&gt;</b>
-									<br />
-									<span class="lang" key="TAB_INST_MODULES_DESC_1">&lt;Missing TAB_INST_MODULES_DESC_1&gt;</span> <a class="md-blue" href="https://github.com/ElderDrivers/EdXposedManager/releases" target="_blank">Github Releases</a> <span class="lang" key="TAB_INST_MODULES_DESC_2">&lt;Missing TAB_INST_MODULES_DESC_2&gt;</span>
-									<br /><br />
-									<span class="lang" key="TAB_INST_MODULES_DESC_3">&lt;Missing TAB_INST_MODULES_DESC_3&gt;</span>
-									<br /><br />
-									<span class="lang" key="TAB_INST_MODULES_DESC_4">&lt;Missing TAB_INST_MODULES_DESC_4&gt;</span>
-									<br /><br />
-									<span class="lang" key="TAB_INST_MODULES_DESC_5">&lt;Missing TAB_INST_MODULES_DESC_5&gt;</span>
-									<br /><br />
-									<span class="lang" key="TAB_INST_MODULES_DESC_6">&lt;Missing TAB_INST_MODULES_DESC_6&gt;</span> <a class="md-blue" href="https://github.com/RikkaApps/Riru/releases/download/v17/app-release.apk">Github Release</a> <span class="lang" key="TAB_INST_MODULES_DESC_7">&lt;Missing TAB_INST_MODULES_DESC_7&gt;</span>
-									<br /><br />
-									<span class="lang" key="TAB_INST_MODULES_DESC_8">&lt;Missing TAB_INST_MODULES_DESC_8&gt;</span>
-								</div>
-							</div>
-							<br />
-							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-								<div class="mdl-card__actions mdl-card--border">
-									<span class="lang" key="TAB_INST_ALSO_1">&lt;Missing TAB_INST_ALSO_1&gt;</span> <a class="md-blue" href="https://github.com/solohsu/XposedInstaller/releases" target="_blank">EdXposed Installer</a> <span class="lang" key="TAB_INST_ALSO_2">&lt;Missing TAB_INST_ALSO_2&gt;</span>
-									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/RikkaApps/Riru/releases" target="_blank">
-										<span class="mdi mdi-open-in-new"></span><b> Riru</b>
-									</a>
-									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/ElderDrivers/EdXposed/releases" target="_blank">
-										<span class="mdi mdi-open-in-new"></span><b> EdXposed</b>
-									</a>
-								</div>
-							</div>
-							<br />
-							<div id="text_card_tab2" class="text-card-wide mdl-card mdl-shadow--2dp" style="text-align: center;">
-								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
-									<b class="lang" key="TAB_INST_TROUBLE">&lt;Missing TAB_INST_TROUBLE&gt;</b>
-								</div>
-								<div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
-									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green" id="faq">
-										<b>FAQ</b>
-									</a>
-								</div>
-							</div>
-							<br />
-						</div>
-					</center>
-				</section>
-				<section class="mdl-layout__tab-panel" id="scroll-tab-4">
-					<center>
-						<div class="page-content">
-							<br />
-							<!-- Your content goes here -->
-							<br />
-						</div>
-					</center>
-				</section>
-				<section class="mdl-layout__tab-panel" id="scroll-tab-5">
-					<center>
-						<div class="page-content">
-							<br />
-							<!-- Your content goes here -->
-							<br />
-						</div>
-					</center>
-				</section>
-				<section class="mdl-layout__tab-panel" id="scroll-tab-6">
-					<center>
-						<div class="page-content">
-							<br />
-							<!-- Your content goes here -->
-							<br />
-						</div>
-					</center>
-				</section>
-			</main>
-		</div>
-		<div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
-			<div class="mdl-snackbar__text"></div>
-			<button class="mdl-snackbar__action" type="button"></button>
-		</div>
-		<script src="js/material.min.js" async></script>
-		<script src="js/main.js" async defer></script>
-	</body>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </center>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+            <!--suppress HtmlDeprecatedTag -->
+            <center>
+                <div class="page-content">
+                    <br/>
+                    <div class="status-card-wide mdl-card mdl-shadow--2dp bg-green" id="status_card_tab2"
+                         style="text-align: center;">
+                        <div class="mdl-card__title">
+                            <span class="mdi mdi-vector-difference" style="font-size: 120px;"></span>
+                        </div>
+                        <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
+                            <b class="lang" key="TAB_DIFF_STATUS">&lt;Missing TAB_DIFF_STATUS&gt;</b>
+                        </div>
+                        <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green"
+                               id="i-am-sure">
+                                <b class="lang" key="TAB_DIFF_SURE">&lt;Missing TAB_DIFF_SURE&gt;</b>
+                            </a>
+                        </div>
+                    </div>
+                    <br/>
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                        <thead>
+                        <tr>
+                            <th class="mdl-data-table__cell--non-numeric lang" key="TAB_HOME_FEATURES">&lt;Missing
+                                TAB_HOME_FEATURES&gt;
+                            </th>
+                            <th>EdXposed</th>
+                            <th>Xposed</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_WHITE">&lt;Missing
+                                TAB_DIFF_WHITE&gt;
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                                    <input checked class="mdl-checkbox__input" disabled type="checkbox"/>
+                                </label>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                                    <input class="mdl-checkbox__input" disabled type="checkbox"/>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_BLACK">&lt;Missing
+                                TAB_DIFF_BLACK&gt;
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                                    <input checked class="mdl-checkbox__input" disabled type="checkbox"/>
+                                </label>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                                    <input class="mdl-checkbox__input" disabled type="checkbox"/>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_COMPAT">&lt;Missing
+                                TAB_DIFF_COMPAT&gt;
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                                    <input checked class="mdl-checkbox__input" disabled type="checkbox"/>
+                                </label>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                                    <input class="mdl-checkbox__input" disabled type="checkbox"/>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric lang" key="TAB_DIFF_REBOOT">&lt;Missing
+                                TAB_DIFF_REBOOT&gt;
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                                    <input checked class="mdl-checkbox__input" disabled type="checkbox"/>
+                                </label>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                                    <input class="mdl-checkbox__input" disabled type="checkbox"/>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Safetynet</td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                                    <input checked class="mdl-checkbox__input" disabled type="checkbox"/>
+                                </label>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                                    <input class="mdl-checkbox__input" disabled type="checkbox"/>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Android</td>
+                            <td class="mdl-data-table__cell--non-numeric">8.0+</td>
+                            <td class="mdl-data-table__cell--non-numeric">2.3~8.1</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+                    <br/>
+                    <div class="text-card-wide mdl-card mdl-shadow--2dp" id="text_card_tab2"
+                         style="text-align: center;">
+                        <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
+                            <b class="lang" key="TAB_DIFF_MORE">&lt;Missing TAB_DIFF_MORE&gt;</b>
+                        </div>
+                        <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green"
+                               href="wiki" target="_blank">
+                                <span class="mdi mdi-open-in-new"></span><b> Wiki</b>
+                            </a>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </center>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+            <!--suppress HtmlDeprecatedTag -->
+            <center>
+                <div class="page-content">
+                    <br/>
+                    <div class="status-card-wide mdl-card mdl-shadow--2dp bg-green" id="status_card_tab3"
+                         style="text-align: center;">
+                        <div class="mdl-card__title">
+                            <span class="mdi mdi-cloud-download" style="font-size: 120px;"></span>
+                        </div>
+                        <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
+                            <b class="lang" key="TAB_INST_STATUS">&lt;Missing TAB_INST_STATUS&gt;</b>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="status-card-wide mdl-card mdl-shadow--2dp bg-green" style="text-align: center;">
+                        <div class="mdl-card__title">
+                            <svg height="120px" viewBox="0 0 720 720" width="120px" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M332.48,421.18c0,0 3.77,22.45 -0.82,71.95c-5.76,62.06 23.64,160.64 23.64,160.64c0,0 40.1,-98.78 33.1,-162.59c-5.75,-52.45 2.6,-70.79 0.82,-68.33c-30.81,42.57 -56.75,-1.67 -56.75,-1.67z"
+                                      fill="#ffffff"/>
+                                <path d="M407.6,474.45c5.01,38.77 -0.57,60.01 -7.81,101.51c-3.66,20.99 74.78,-63.1 104.86,-113.23c5.02,-8.36 -28.77,32.6 -62.19,3.35c-23.18,-20.28 -27.16,-26.44 -45.18,-44.06c-6.08,-5.94 6.74,24.72 10.32,52.43z"
+                                      fill="#ffffff"/>
+                                <path d="M321.99,425.09c-18.02,17.62 -22,23.78 -45.18,44.06c-33.42,29.25 -67.21,-11.71 -62.19,-3.35c30.08,50.13 108.52,134.22 104.86,113.23c-7.24,-41.5 -12.82,-62.74 -7.81,-101.51c3.58,-27.71 16.4,-58.37 10.32,-52.43z"
+                                      fill="#ffffff"/>
+                                <path d="M399.15,355.87c36.67,10.57 50.89,61.5 87.91,67.8c7.65,1.3 16.27,3.6 26.31,3.12c18.77,-0.9 42.51,-11.51 74.22,-56.5c9.38,-13.3 -23.27,85.66 -105.13,86.86c-59.96,0.88 -66.97,-58.7 -106.93,-60.51c-14.43,-0.65 -15.34,-28.17 -15.34,-28.17c0,0 17.22,-18.86 38.96,-12.6z"
+                                      fill="#ffffff"/>
+                                <path d="M321.51,355.59c-36.67,10.57 -50.89,61.5 -87.91,67.8c-7.65,1.3 -16.27,3.6 -26.31,3.12c-18.77,-0.9 -42.51,-11.51 -74.22,-56.5c-9.38,-13.3 23.27,85.66 105.13,86.86c59.96,0.88 66.97,-58.7 106.93,-60.51c14.43,-0.65 15.34,-28.17 15.34,-28.17c0,0 -17.22,-18.86 -38.96,-12.6z"
+                                      fill="#ffffff"/>
+                                <path d="M458.64,355.09c36.87,27.94 25.88,58.7 46.57,49.92c69.7,-29.55 57.51,-181.21 51.87,-162.87c-31.77,103.41 -100.99,109.2 -167.61,61.63c-13.01,-9.29 48.38,35.57 69.16,51.31z"
+                                      fill="#ffffff"/>
+                                <path d="M330.91,303.77c-66.62,47.56 -135.84,41.78 -167.61,-61.63c-5.63,-18.34 -17.82,133.31 51.87,162.87c20.7,8.78 9.7,-21.98 46.57,-49.92c20.78,-15.75 82.17,-60.6 69.16,-51.31z"
+                                      fill="#ffffff"/>
+                                <path d="M465.61,318c80.43,-3.32 95.29,-135.17 88.96,-119.08c-28.39,72.22 -135.86,45.05 -146.13,90.64c-2.02,8.94 18.2,30.06 57.17,28.45z"
+                                      fill="#ffffff"/>
+                                <path d="M311.95,289.55c-10.27,-45.59 -117.75,-18.41 -146.13,-90.64c-6.32,-16.09 8.53,115.76 88.96,119.08c38.97,1.61 59.19,-19.5 57.17,-28.45z"
+                                      fill="#ffffff"/>
+                                <path d="M403.42,269.47c0,0 43.73,-23.5 81.16,-33.74c34.99,-9.58 61.22,-33.13 64.14,-58.01c2.18,-18.53 -27.05,-53.55 -27.05,-53.55c0,0 -20.51,56.9 -47.41,85.34c-29.28,30.96 -18.15,26.78 -70.84,59.96z"
+                                      fill="#ffffff"/>
+                                <path d="M246.13,209.51c-26.9,-28.44 -47.41,-85.34 -47.41,-85.34c0,0 -29.23,35.01 -27.05,53.55c2.93,24.88 29.16,48.43 64.14,58.01c37.43,10.25 81.16,33.74 81.16,33.74c-52.69,-33.18 -41.55,-29 -70.84,-59.96z"
+                                      fill="#ffffff"/>
+                                <path d="M398.12,265.85c47.36,-38.85 72.53,-89.54 113.51,-145.02c7.73,-10.46 -34.58,-35.7 -51.31,-37.37c-16.73,-1.67 -30.77,59.79 -32.35,95.94c-1.44,33.01 -36.21,91.68 -29.84,86.45z"
+                                      fill="#ffffff"/>
+                                <path d="M292.42,179.39c-1.58,-36.15 -15.62,-97.61 -32.35,-95.94c-16.73,1.67 -59.04,26.91 -51.31,37.37c40.98,55.48 66.14,106.17 113.51,145.02c6.37,5.22 -28.4,-53.45 -29.84,-86.45z"
+                                      fill="#ffffff"/>
+                                <path d="M402.86,140.35c3.34,-26.76 15.37,-46.32 39.32,-62.75c-21.17,-7.08 -38.77,-12.83 -47.97,-5.3c-9.2,7.53 -34.2,32.7 -30.85,73.68c3.34,40.98 0.18,194.09 7.43,191.25c3.9,-104.87 37.09,-135 32.07,-196.89z"
+                                      fill="#ffffff"/>
+                                <path d="M349.59,337.24c7.24,2.83 4.08,-150.27 7.43,-191.25c3.34,-40.98 -21.65,-66.16 -30.85,-73.68c-9.2,-7.53 -26.8,-1.78 -47.97,5.3c23.95,16.43 35.98,35.98 39.32,62.75c-5.02,61.89 28.17,92.02 32.07,196.89z"
+                                      fill="#ffffff"/>
+                            </svg>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border bg-white">
+                            <b class="md-grey lang" key="TAB_INST_REQUIRE">&lt;Missing TAB_INST_REQUIRE&gt;</b>
+                            <br/><br/>
+                            1) <span class="lang"
+                                     key="TAB_INST_REQUIRE_DESC_1">&lt;Missing TAB_INST_REQUIRE_DESC_1&gt;</span>
+                            <br/><br/>
+                            2) <a href="https://github.com/topjohnwu/Magisk/releases/latest">Magisk</a> <span
+                                class="lang"
+                                key="TAB_INST_REQUIRE_DESC_2">&lt;Missing TAB_INST_REQUIRE_DESC_2&gt;</span>
+                            <br/><br/>
+                            <span class="lang"
+                                  key="TAB_INST_REQUIRE_DESC_3">&lt;Missing TAB_INST_REQUIRE_DESC_3&gt;</span>
+                            <br/>
+                            <a href="http://edxp.meowcat.org/repo/version.json" target="_blank">http://edxp.meowcat.org/repo/version.json</a>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="status-card-wide mdl-card mdl-shadow--2dp bg-green" style="text-align: center;">
+                        <div class="mdl-card__title">
+                            <span class="mdi mdi-settings-box" style="font-size: 120px;"></span>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border bg-white">
+                            <b class="md-grey lang" key="TAB_INST_INSTALL">&lt;Missing TAB_INST_INSTALL&gt;</b>
+                            <br/><br/>
+                            1) <span class="lang"
+                                     key="TAB_INST_INSTALL_DESC_1">&lt;Missing TAB_INST_INSTALL_DESC_1&gt;</span> <a
+                                class="md-blue" href="https://github.com/ElderDrivers/EdXposedManager/releases/latest"
+                                target="_blank">Github Releases</a>
+                            <br/><br/>
+                            2) <span class="lang"
+                                     key="TAB_INST_INSTALL_DESC_2">&lt;Missing TAB_INST_INSTALL_DESC_2&gt;</span>
+                            <br/><br/>
+                            3) <span class="lang"
+                                     key="TAB_INST_INSTALL_DESC_3">&lt;Missing TAB_INST_INSTALL_DESC_3&gt;</span> <a
+                                class="md-blue"
+                                href="https://github.com/RikkaApps/Riru/releases/download/v19.4/app-release.apk">Github
+                            Releases</a>
+                            <br/><br/>
+                            4) <span class="lang"
+                                     key="TAB_INST_INSTALL_DESC_4">&lt;Missing TAB_INST_INSTALL_DESC_4&gt;</span>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                        <div class="mdl-card__actions mdl-card--border">
+                            <span class="lang" key="TAB_INST_MANUALLY">&lt;Missing TAB_INST_MANUALLY&gt;</span>
+                            <br/>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                               href="https://github.com/RikkaApps/Riru/releases/latest" target="_blank">
+                                <span class="mdi mdi-open-in-new"></span><b> Riru</b>
+                            </a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                               href="https://github.com/ElderDrivers/EdXposed/releases/latest" target="_blank">
+                                <span class="mdi mdi-open-in-new"></span><b> EdXposed</b>
+                            </a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                               href="https://github.com/solohsu/magisk_files/blob/master/README.md" target="_blank">
+                                <span class="mdi mdi-open-in-new"></span><b> Custom Magisk</b>
+                            </a>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="text-card-wide mdl-card mdl-shadow--2dp" id="text_card_tab3"
+                         style="text-align: center;">
+                        <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
+                            <b class="lang" key="TAB_INST_TROUBLE">&lt;Missing TAB_INST_TROUBLE&gt;</b>
+                        </div>
+                        <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green"
+                               id="faq">
+                                <b>FAQ</b>
+                            </a>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </center>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+            <!--suppress HtmlDeprecatedTag -->
+            <center>
+                <div class="page-content">
+                    <br/>
+                    <div class="status-card-wide mdl-card mdl-shadow--2dp bg-green" id="status_card_tab4"
+                         style="text-align: center;">
+                        <div class="mdl-card__title">
+                            <span class="mdi mdi-trash-can" style="font-size: 120px;"></span>
+                        </div>
+                        <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
+                            <b class="lang" key="TAB_UNINST_STATUS">&lt;Missing TAB_UNINST_STATUS&gt;</b>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="text-card-wide mdl-card mdl-shadow--2dp" id="text_card_tab4"
+                         style="text-align: center;">
+                        <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-green">
+                            <b class="lang" key="TAB_UNINST_TROUBLE">&lt;Missing TAB_UNINST_TROUBLE&gt;</b>
+                        </div>
+                        <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect md-green"
+                               id="trouble">
+                                <b>FAQ</b>
+                            </a>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="status-card-wide mdl-card mdl-shadow--2dp bg-green" style="text-align: center;">
+                        <div class="mdl-card__title">
+                            <svg height="120px" viewBox="0 0 720 720" width="120px" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M332.48,421.18c0,0 3.77,22.45 -0.82,71.95c-5.76,62.06 23.64,160.64 23.64,160.64c0,0 40.1,-98.78 33.1,-162.59c-5.75,-52.45 2.6,-70.79 0.82,-68.33c-30.81,42.57 -56.75,-1.67 -56.75,-1.67z"
+                                      fill="#ffffff"/>
+                                <path d="M407.6,474.45c5.01,38.77 -0.57,60.01 -7.81,101.51c-3.66,20.99 74.78,-63.1 104.86,-113.23c5.02,-8.36 -28.77,32.6 -62.19,3.35c-23.18,-20.28 -27.16,-26.44 -45.18,-44.06c-6.08,-5.94 6.74,24.72 10.32,52.43z"
+                                      fill="#ffffff"/>
+                                <path d="M321.99,425.09c-18.02,17.62 -22,23.78 -45.18,44.06c-33.42,29.25 -67.21,-11.71 -62.19,-3.35c30.08,50.13 108.52,134.22 104.86,113.23c-7.24,-41.5 -12.82,-62.74 -7.81,-101.51c3.58,-27.71 16.4,-58.37 10.32,-52.43z"
+                                      fill="#ffffff"/>
+                                <path d="M399.15,355.87c36.67,10.57 50.89,61.5 87.91,67.8c7.65,1.3 16.27,3.6 26.31,3.12c18.77,-0.9 42.51,-11.51 74.22,-56.5c9.38,-13.3 -23.27,85.66 -105.13,86.86c-59.96,0.88 -66.97,-58.7 -106.93,-60.51c-14.43,-0.65 -15.34,-28.17 -15.34,-28.17c0,0 17.22,-18.86 38.96,-12.6z"
+                                      fill="#ffffff"/>
+                                <path d="M321.51,355.59c-36.67,10.57 -50.89,61.5 -87.91,67.8c-7.65,1.3 -16.27,3.6 -26.31,3.12c-18.77,-0.9 -42.51,-11.51 -74.22,-56.5c-9.38,-13.3 23.27,85.66 105.13,86.86c59.96,0.88 66.97,-58.7 106.93,-60.51c14.43,-0.65 15.34,-28.17 15.34,-28.17c0,0 -17.22,-18.86 -38.96,-12.6z"
+                                      fill="#ffffff"/>
+                                <path d="M458.64,355.09c36.87,27.94 25.88,58.7 46.57,49.92c69.7,-29.55 57.51,-181.21 51.87,-162.87c-31.77,103.41 -100.99,109.2 -167.61,61.63c-13.01,-9.29 48.38,35.57 69.16,51.31z"
+                                      fill="#ffffff"/>
+                                <path d="M330.91,303.77c-66.62,47.56 -135.84,41.78 -167.61,-61.63c-5.63,-18.34 -17.82,133.31 51.87,162.87c20.7,8.78 9.7,-21.98 46.57,-49.92c20.78,-15.75 82.17,-60.6 69.16,-51.31z"
+                                      fill="#ffffff"/>
+                                <path d="M465.61,318c80.43,-3.32 95.29,-135.17 88.96,-119.08c-28.39,72.22 -135.86,45.05 -146.13,90.64c-2.02,8.94 18.2,30.06 57.17,28.45z"
+                                      fill="#ffffff"/>
+                                <path d="M311.95,289.55c-10.27,-45.59 -117.75,-18.41 -146.13,-90.64c-6.32,-16.09 8.53,115.76 88.96,119.08c38.97,1.61 59.19,-19.5 57.17,-28.45z"
+                                      fill="#ffffff"/>
+                                <path d="M403.42,269.47c0,0 43.73,-23.5 81.16,-33.74c34.99,-9.58 61.22,-33.13 64.14,-58.01c2.18,-18.53 -27.05,-53.55 -27.05,-53.55c0,0 -20.51,56.9 -47.41,85.34c-29.28,30.96 -18.15,26.78 -70.84,59.96z"
+                                      fill="#ffffff"/>
+                                <path d="M246.13,209.51c-26.9,-28.44 -47.41,-85.34 -47.41,-85.34c0,0 -29.23,35.01 -27.05,53.55c2.93,24.88 29.16,48.43 64.14,58.01c37.43,10.25 81.16,33.74 81.16,33.74c-52.69,-33.18 -41.55,-29 -70.84,-59.96z"
+                                      fill="#ffffff"/>
+                                <path d="M398.12,265.85c47.36,-38.85 72.53,-89.54 113.51,-145.02c7.73,-10.46 -34.58,-35.7 -51.31,-37.37c-16.73,-1.67 -30.77,59.79 -32.35,95.94c-1.44,33.01 -36.21,91.68 -29.84,86.45z"
+                                      fill="#ffffff"/>
+                                <path d="M292.42,179.39c-1.58,-36.15 -15.62,-97.61 -32.35,-95.94c-16.73,1.67 -59.04,26.91 -51.31,37.37c40.98,55.48 66.14,106.17 113.51,145.02c6.37,5.22 -28.4,-53.45 -29.84,-86.45z"
+                                      fill="#ffffff"/>
+                                <path d="M402.86,140.35c3.34,-26.76 15.37,-46.32 39.32,-62.75c-21.17,-7.08 -38.77,-12.83 -47.97,-5.3c-9.2,7.53 -34.2,32.7 -30.85,73.68c3.34,40.98 0.18,194.09 7.43,191.25c3.9,-104.87 37.09,-135 32.07,-196.89z"
+                                      fill="#ffffff"/>
+                                <path d="M349.59,337.24c7.24,2.83 4.08,-150.27 7.43,-191.25c3.34,-40.98 -21.65,-66.16 -30.85,-73.68c-9.2,-7.53 -26.8,-1.78 -47.97,5.3c23.95,16.43 35.98,35.98 39.32,62.75c-5.02,61.89 28.17,92.02 32.07,196.89z"
+                                      fill="#ffffff"/>
+                            </svg>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border bg-white">
+                            <b class="md-grey lang" key="TAB_UNINST_MAGISK">&lt;Missing TAB_UNINST_MAGISK&gt;</b>
+                            <br/><br/>
+                            1) <span class="lang" key="TAB_UNINST_MAGISK_DESC_1">&lt;Missing TAB_UNINST_MAGISK_DESC_1&gt;</span>
+                            <br/><br/>
+                            2) <span
+                                class="lang"
+                                key="TAB_UNINST_MAGISK_DESC_2">&lt;Missing TAB_UNINST_MAGISK_DESC_2&gt;</span>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="status-card-wide mdl-card mdl-shadow--2dp bg-green" style="text-align: center;">
+                        <div class="mdl-card__title">
+                            <span class="mdi mdi-restore" style="font-size: 120px;"></span>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border bg-white">
+                            <b class="md-grey lang" key="TAB_UNINST_RECOVERY">&lt;Missing TAB_UNINST_RECOVERY&gt;</b>
+                            <br/><br/>
+                            1) <span class="lang"
+                                     key="TAB_UNINST_RECOVERY_DESC_1">&lt;Missing TAB_UNINST_RECOVERY_DESC_1&gt;</span>
+                            <br/><br/>
+                            2) <span class="lang"
+                                     key="TAB_UNINST_RECOVERY_DESC_2">&lt;Missing TAB_UNINST_RECOVERY_DESC_2&gt;</span>
+                            <a
+                                    class="md-blue"
+                                    href="https://github.com/ElderDrivers/EdXposed/releases/download/v0.4.4.4_a/EdXposedUninstaller_rec-v3.zip"><span
+                                    class="lang"
+                                    key="TAB_UNINST_RECOVERY_DESC_3">&lt;Missing TAB_UNINST_RECOVERY_DESC_3&gt;</span></a>
+                            <br/><br/>
+                            3) <span class="lang"
+                                     key="TAB_UNINST_RECOVERY_DESC_4">&lt;Missing TAB_UNINST_RECOVERY_DESC_4&gt;</span>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="status-card-wide mdl-card mdl-shadow--2dp bg-green" style="text-align: center;">
+                        <div class="mdl-card__title">
+                            <span class="mdi mdi-folder-pound" style="font-size: 120px;"></span>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border bg-white">
+                            <b class="md-grey lang" key="TAB_UNINST_FILE">&lt;Missing TAB_UNINST_FILE&gt;</b>
+                            <br/><br/>
+                            1) <span class="lang"
+                                     key="TAB_UNINST_FILE_DESC_1">&lt;Missing TAB_UNINST_FILE_DESC_1&gt;</span>
+                            <br/><br/>
+                            2) <span class="lang"
+                                     key="TAB_UNINST_FILE_DESC_2">&lt;Missing TAB_UNINST_FILE_DESC_2&gt;</span>
+                            <br/><br/>
+                            3) <span class="lang"
+                                     key="TAB_UNINST_FILE_DESC_3">&lt;Missing TAB_UNINST_FILE_DESC_3&gt;</span>
+                            <br/><br/>
+                            4) <span class="lang"
+                                     key="TAB_UNINST_FILE_DESC_4">&lt;Missing TAB_UNINST_FILE_DESC_4&gt;</span>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="text-card-wide mdl-card mdl-shadow--2dp" id="text_card_tab_4"
+                         style="text-align: center;">
+                        <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border bg-white md-blue">
+                            <b class="lang" key="TAB_UNINST_RESTORE">&lt;Missing TAB_UNINST_RESTORE&gt;</b>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </center>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-5">
+            <!--suppress HtmlDeprecatedTag -->
+            <center>
+                <div class="page-content">
+                    <br/>
+                    <!-- Your content goes here -->
+                    <br/>
+                </div>
+            </center>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-6">
+            <!--suppress HtmlDeprecatedTag -->
+            <center>
+                <div class="page-content">
+                    <br/>
+                    <!-- Your content goes here -->
+                    <br/>
+                </div>
+            </center>
+        </section>
+    </main>
+</div>
+<div class="mdl-js-snackbar mdl-snackbar" id="snackbar">
+    <div class="mdl-snackbar__text"></div>
+    <button class="mdl-snackbar__action" type="button"></button>
+</div>
+<script async src="js/material.min.js"></script>
+<script async defer src="js/main.js"></script>
+</body>
 </html>
