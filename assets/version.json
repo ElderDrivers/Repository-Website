@@ -8,7 +8,7 @@
 		"support": "http:\/\/github.com\/ElderDrivers\/EdXposed",
 		"notice": "None<br>",
 		"description": "v0.4.6.0<br \/>Changelogs<br \/>- Add support for Android 10<br \/>- Remove sepolicy related commands from post-fs-data.sh (https:\/\/github.com\/topjohnwu\/Magisk\/pull\/1685)<br \/><br \/>**Notes**: Since the above PR is not merged yet, to make those sepolicies present you have to use this build along with the customized Magisk build hosted here: https:\/\/github.com\/solohsu\/magisk_files.<br \/>",
-		"installers": [],
+		"installers": null,
 		"uninstallers": [{
 			"name": "EdXposed_Uninstaller",
 			"link": "https:\/\/github.com\/ElderDrivers\/EdXposed\/releases\/download\/v0.4.2.3_a\/EdXposedUninstaller_rec-v3.zip"
