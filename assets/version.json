@@ -1,12 +1,12 @@
 {
-	"tabs": [{
+	"tabs": {
 		"name": "Alpha",
 		"sdks": [26, 27, 28, 29],
 		"author": "solohsu",
 		"stable": true,
 		"official": true,
 		"support": "http:\/\/github.com\/ElderDrivers\/EdXposed",
-		"notice": "None",
+		"notice": "None<br>",
 		"description": "v0.4.6.0<br \/>Changelogs<br \/>- Add support for Android 10<br \/>- Remove sepolicy related commands from post-fs-data.sh (https:\/\/github.com\/topjohnwu\/Magisk\/pull\/1685)<br \/><br \/>**Notes**: Since the above PR is not merged yet, to make those sepolicies present you have to use this build along with the customized Magisk build hosted here: https:\/\/github.com\/solohsu\/magisk_files.<br \/>",
 		"installers": [{
 			"name": "magisk-EdXposed-SandHook-v0.4.6.0_beta.4471.-release.zip",
