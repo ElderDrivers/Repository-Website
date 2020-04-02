@@ -1,0 +1,25 @@
+- Fix update notification wrong switching
+- Translation update and correction
+- Remove confused operations, improve experience
+- UI improve
+- Remove list separator
+- Add rough SELinux status check
+- Add refresh button for modules fragment
+- Add open-source security notice
+- Expand reboot menu
+- Rewrite logs fragments, merge logs, and optimize loading speed
+- Improve ROM detection
+- Multi-user support: need EdXposed v0.4.6.2 or later
+
+- 修复更新通知错误切换
+- 翻译更新和修正
+- 移除迷惑操作, 改善体验
+- UI 改进
+- 移除列表分割线
+- 添加粗略的 SELinux 状态监测
+- 为模块界面添加刷新按钮
+- 添加开源安全通知
+- 展开重启菜单
+- 重写日志界面, 合并日志并优化加载速度
+- 改进 ROM 检测
+- 多用户支持: 需要 EdXposed v0.4.6.2 或更高版本
