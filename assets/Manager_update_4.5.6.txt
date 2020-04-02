@@ -1,3 +1,11 @@
+45601:
+- Fix array out of bounds
+- Compatible with methods that are not deprecation in Android Oreo
+
+- 修复数组越界问题
+- 兼容 Android Oreo 中的未废弃方法
+
+45600:
 - Fix update notification wrong switching
 - Translation update and correction
 - Remove confused operations, improve experience
