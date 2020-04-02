@@ -1,0 +1,13 @@
+- Reset log context so may there should be no problems with unreadable logs
+- Xposed API 91: Multi-user support (thanks to @Palatis ):
+* Need EdXposed Manager v4.5.6.45600 or later version to work with all features
+* App and Module list can managed by different users
+* Settings will inherits of the primary user if EdXposed Manager is not installed in other user
+* If you don't want to enable Xposed function in a certain user, you only need to enable the whitelist in the target user, or enable the instant module list function in the master user when SELinux is Enforcing
+
+- 重设日志上下文, 应该不会再无法读取日志了
+- Xposed API 91: 多用户支持 (感谢 @Palatis ):
+* 需要 EdXposed Manager v4.5.6.45600 或更高版本以使用所有功能
+* 应用和模块列表可以由不同的用户管理
+* 如果未在其他用户中安装 EdXposed Manager，则继承主用户的设置
+* 如果不想在特定用户中启用 Xposed 功能，则只需在目标用户中启用白名单，或在 SELinux 状态为 Enforcing 时在主用户中启用即时模块列表功能
