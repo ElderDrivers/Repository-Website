@@ -31,3 +31,7 @@
 - 重写日志界面, 合并日志并优化加载速度
 - 改进 ROM 检测
 - 多用户支持: 需要 EdXposed v0.4.6.2 或更高版本
+
+Telegram channel: https://t.me/EdXposed
+Website: https://edxp.meowcat.org/
+GitHub: https://github.com/ElderDrivers
