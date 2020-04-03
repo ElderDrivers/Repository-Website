@@ -11,3 +11,7 @@
 * 应用和模块列表可以由不同的用户管理
 * 如果未在其他用户中安装 EdXposed Manager，则继承主用户的设置
 * 如果不想在特定用户中启用 Xposed 功能，则只需在目标用户中启用白名单，或在 SELinux 状态为 Enforcing 时在主用户中启用即时模块列表功能
+
+Telegram channel: https://t.me/EdXposed
+Website: https://edxp.meowcat.org/
+GitHub: https://github.com/ElderDrivers
