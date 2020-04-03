@@ -1,0 +1,29 @@
+45510:
+- Fix UI bug
+- Correct shortcut & default view wrong order
+- Fix modules repo load failed
+
+- 修复 UI bug
+- 修正快捷方式和默认视图的错误顺序
+- 修复模块仓库加载失败的问题
+
+45500:
+- Fix random inactive
+- Migrate to topjohnwu libsu
+- Remove busybox binary
+- Hide optimize icon
+- Adaptive icon
+- Fix app shorcuts
+- Translation update & correct
+
+- 修复随机的未激活问题
+- 迁移到 topjohnwu libsu
+- 删除 busybox 二进制文件
+- 隐藏优化功能的图标
+- 更新自适应图标
+- 修复快捷方式
+- 翻译更新和修正
+
+Telegram channel: https://t.me/EdXposed
+Website: https://edxp.meowcat.org/
+GitHub: https://github.com/ElderDrivers
