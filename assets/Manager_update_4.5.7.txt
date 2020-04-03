@@ -1,0 +1,15 @@
+- Fix crash on first installation
+- Enhancement mode
+* Remove background restrictions on EdXposed
+* Determine if Xposed is working properly
+* Pretend to have Xposed Installer installed
+
+- 修复首次安装时闪退
+- 加入增强模式
+* 移除针对 EdXposed 的后台限制
+* 判断 Xposed 是否正常工作
+* 假装安装了 Xposed Installer
+
+Telegram channel: https://t.me/EdXposed
+Website: https://edxp.meowcat.org/
+GitHub: https://github.com/ElderDrivers
