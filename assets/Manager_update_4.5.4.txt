@@ -1,0 +1,33 @@
+45401:
+- Disable minify to fix not active
+
+- 关闭 minify 以修复未激活的问题
+
+45400:
+- Translation update and correct
+- Add option to change status bar color
+- Remove unused code to reduce size
+- Optimize option ordering to prevent misoperation
+- Merge support to about
+- Add CDN to optimize loading speed
+- Add One UI detection
+- Fix community link
+- Delete temp packages after slient install
+- Fix log unreadable (need EdXposed v0.4.6.1_4494 or above)
+- Add option to disable modules custom log (need EdXposed v0.4.6.1_4494 or above)
+
+- 翻译更新和修正
+- 添加选项来更改状态栏颜色
+- 删除无用代码缩减包体
+- 优化选项位置防止误操作
+- 合并支持与关于页面
+- 添加 CDN 提高加载速度
+- 添加 One UI 检测
+- 修复社群链接
+- 静默安装之后删除临时安装包
+- 修复日志无法读取 (需要 EdXposed v0.4.6.1_4494 或更高版本)
+- 添加选项以禁用模块输出的日志 (需要 EdXposed v0.4.6.1_4494 或更高版本)
+
+Telegram channel: https://t.me/EdXposed
+Website: https://edxp.meowcat.org/
+GitHub: https://github.com/ElderDrivers
