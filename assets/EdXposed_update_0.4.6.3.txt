@@ -1,0 +1,15 @@
+- Announced XSharedPreferences as deprecated on Android Pie or above
+- Fix SELinuxHelper
+- Resetting the library file path
+* Now allows each installation to be a unique Xposed framework
+* Completely erasing certain single, fixed features of the Xposed framework
+
+- 标记 XSharedPreferences 在 Android Pie 及以上为 deprecated
+- 修复 SELinuxHelper
+- 重设库文件路径
+* 现在允许每次安装均为独一无二的 Xposed 框架
+* 彻底抹去 Xposed 框架的某些单一、固定特征
+
+Telegram channel: https://t.me/EdXposed
+Website: https://edxp.meowcat.org/
+GitHub: https://github.com/ElderDrivers
