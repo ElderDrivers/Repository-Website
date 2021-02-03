@@ -1,0 +1,39 @@
+EdXposed Manager v4.6.0 Changes Log
+
+- Module Activation Scope support
+- Enable Xposed Hide(Black) by default
+- UI tweak
+- SandHook backend variant switch (in Settings)
+- Translation update
+- Bugs & crashes fix
+- Remove useless permissions check
+- Dark mode
+- Support Android R userspace reboot
+- Update resource hook flag
+- Module notification switch
+- List sorts & filters
+
+**Notes**:
+- The enhancement mode was temporarily removed due to a persistent bug.
+- Edxposed v0.5.2.1 or higher is required and is not compatible with previous versions.
+
+- 支持 模块作用域
+- 默认启用 Xposed Hide(黑) 工作模式
+- UI 调整
+- 翻译更新
+- Bug 和崩溃修复
+- 移除多余的权限检查
+- 自动暗色模式
+- 支持 Android R 的 重启至用户空间
+- 更新 资源钩子切换开关
+- 新增 模块更新通知开关
+- 新增 SandHook 后端切换开关
+- 新增 列表排序和过滤
+
+**注意事项**:
+- 由于一个持久性的bug，增强模式从该版本开始暂时被移除
+- 需要 Edxposed v0.5.2.1 或更高版本，不兼容以往的版本
+
+Telegram channel: https://t.me/EdXposed
+Website: https://edxp.meowcat.org/
+GitHub: https://github.com/ElderDrivers
