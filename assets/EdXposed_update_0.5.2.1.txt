@@ -5,6 +5,7 @@ EdXposed v0.5.2.1 Changes Log
 - Remove useless files
 
 **Notes**:
+- Edxposed Manager v4.6.0 or higher is required and is not compatible with previous versions.
 - If you feel the system is running slowly, turn on Xposed Hide(White).
 - YAHFA may cause random soft reboot. If there is any problem, please use SandHook variant first.
 - If you have problems, please check the [Issues Tracker](https://github.com/ElderDrivers/EdXposed/issues) first. If there is no similar problem, please **use debug version** to catch logs and submit.
@@ -14,6 +15,7 @@ EdXposed v0.5.2.1 Changes Log
 - 移除无用文件
 
 **注意事项**:
+- 需要 Edxposed Manager v4.6.0 或更高版本，不兼容以往的版本
 - 如果你认为系统运行缓慢，请尝试启用 Xposed Hide(白) 工作模式.
 - YAHFA 可能会导致随机性的重启问题. 如果遇到该问题，请先尝试切换为 SandHook
 - 如果遇到任何问题，请先检查 [问题追踪器](https://github.com/ElderDrivers/EdXposed/issues). 如果没有类似的问题, 请 **使用 debug 版本** 来抓取日志并提交.
