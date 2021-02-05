@@ -1,0 +1,19 @@
+EdXposed Manager v4.6.1 Changes Log
+
+- Remove multiple useless functions
+
+**Notes**:
+- The enhancement mode was temporarily removed due to a persistent bug.
+- Edxposed v0.5.2.1 or higher is required and is not compatible with previous versions.
+- Since 46100, Modules fragment ID has changed from 4 to 3.
+
+- 移除了多个无用功能
+
+**注意事项**:
+- 由于一个持久性的bug，增强模式从该版本开始暂时被移除
+- 需要 Edxposed v0.5.2.1 或更高版本，不兼容以往的版本
+- 自 46100 始, 模块 的视图 ID 由 4 更变为 3.
+
+Telegram channel: https://t.me/EdXposed
+Website: https://edxp.meowcat.org/
+GitHub: https://github.com/ElderDrivers
