@@ -3,6 +3,24 @@ EdXposed v0.5.2.1 Changes Log
 - Displays the current working backend to the manager
 - Adapt to the change of hook method of manager
 - Remove useless files
+- Android 11 support
+- Riru v23+ support (no backwards support due to hide macmechanism)
+- Xposed API 93: New XSharedPreferences implemention
+- Xposed API 92: Module Activation Scope support
+- Remove unnecessary SEPolicy (might break some ancient modules, report in [Issues](https://github.com/ElderDrivers/EdXposed/issues/new/choose))
+- Merge SandHook and YAHFA into one zip, you can switch backend in [EdXposed Manager Preview](https://github.com/ElderDrivers/EdXposedManager/issues/170) Settings
+- Optimize XSharedPreferences
+- Move config files to `/data/misc` (requires latest Manager)
+- Move SandHook library to `/data/adb`, Magisk Lite support
+- Move SandHook cache to `/data/misc`
+- Fix delay hook of SandHook
+- Optimize dexmaker for YAHFA
+- Enable YAHFA cache
+- Sync with dexmaker
+- Optimize cold launch speed
+- Better Xposed Hide for apps in black list
+- Bugs & crashes fix
+- Stability improvements
 
 **Notes**:
 - Edxposed Manager v4.6.0 or higher is required and is not compatible with previous versions.
@@ -13,6 +31,24 @@ EdXposed v0.5.2.1 Changes Log
 - 对管理器展示当前工作的后端
 - 适配管理器 hook 方法的改动
 - 移除无用文件
+- 支持 Android 11
+- 支持 Riru v23+ (因为 Riru Hide 机制，不会兼容 v22 以前的 Riru)
+- Xposed API 93: 新 XSharedPreferences 实现
+- Xposed API 92: 模块作用域
+- 移除多余的 SEPolicy (可能会导致一些老模块无法正常工作, 可在 [Issues](https://github.com/ElderDrivers/EdXposed/issues/new/choose) 提交反馈)
+- 将 SandHook 和 YAHFA 合并到一个 zip 中, 你可以在 [EdXposed Manager Preview](https://github.com/ElderDrivers/EdXposedManager/issues/170) 设置 中切换后端
+- 优化 XSharedPreferences
+- 将配置移动至 `/data/misc` (需要最新版 Manager)
+- 将 SandHook 运行库移动至 `/data/adb`, 支持 Magisk Lite
+- 将 SandHook 缓存移动至 `/data/misc`
+- 修复 SandHook 的延迟 hook
+- 优化 YAHFA 的 dexmaker
+- 启用 YAHFA 缓存
+- 同步 dexmaker
+- 优化冷启动速度
+- 更好的 Xposed Hide
+- Bug 和崩溃修复
+- 稳定性提升
 
 **注意事项**:
 - 需要 Edxposed Manager v4.6.0 或更高版本，不兼容以往的版本
