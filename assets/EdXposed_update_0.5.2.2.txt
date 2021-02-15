@@ -1,0 +1,27 @@
+EdXposed v0.5.2.2 Changes Log
+
+- Downgrade YAHFA to fix random soft reboot
+- Fix resources hook in Android 11
+- XSharedPreferences: on-demand file watcher
+- Update Dobby
+- Fix the random failure of static method hook
+
+**Notes**:
+- Edxposed Manager v4.6.0 or higher is required and is not compatible with previous versions.
+- If you feel the system is running slowly, turn on Xposed Hide(White).
+- If you have problems, please check the [Issues Tracker](https://github.com/ElderDrivers/EdXposed/issues) first. If there is no similar problem, please **use debug version** to catch logs and submit.
+
+- 降级 YAHFA 以修复随机重启问题
+- 修复 Android 11 上的资源钩子
+- XSharedPreferences: 按需文件监视程序
+- 更新 Dobby
+- 修复静态方法随机 hook 失效的问题
+
+**注意事项**:
+- 需要 Edxposed Manager v4.6.0 或更高版本，不兼容以往的版本
+- 如果你认为系统运行缓慢，请尝试启用 Xposed Hide(白) 工作模式.
+- 如果遇到任何问题，请先检查 [问题追踪器](https://github.com/ElderDrivers/EdXposed/issues). 如果没有类似的问题, 请 **使用 debug 版本** 来抓取日志并提交.
+
+Telegram channel: https://t.me/EdXposed
+Website: https://edxp.meowcat.org/
+GitHub: https://github.com/ElderDrivers
